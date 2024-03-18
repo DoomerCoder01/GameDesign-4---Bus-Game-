@@ -9,13 +9,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker3
+AssetImportWorker1
 -projectPath
 C:/Github/GameDesign-4---Bus-Game-
 -logFile
-Logs/AssetImportWorker3.log
+Logs/AssetImportWorker1.log
 -srvPort
-59343
+63742
 Successfully changed project path to: C:/Github/GameDesign-4---Bus-Game-
 C:/Github/GameDesign-4---Bus-Game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Github/GameDesign-4---Bus-Game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13256] Host "[IP] 10.0.0.105 [Port] 0 [Flags] 2 [Guid] 1779785015 [EditorId] 1779785015 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12016] Host "[IP] 10.0.0.107 [Port] 0 [Flags] 2 [Guid] 3099562917 [EditorId] 3099562917 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13256] Host "[IP] 10.0.0.105 [Port] 0 [Flags] 2 [Guid] 1779785015 [EditorId] 1779785015 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12016] Host "[IP] 10.0.0.107 [Port] 0 [Flags] 2 [Guid] 3099562917 [EditorId] 3099562917 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 5.08 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004159 seconds.
-- Loaded All Assemblies, in  0.258 seconds
+Registered in 0.004457 seconds.
+- Loaded All Assemblies, in  0.413 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.194 seconds
-Domain Reload Profiling: 451ms
-	BeginReloadAssembly (78ms)
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 688ms
+	BeginReloadAssembly (143ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (102ms)
-		LoadAssemblies (77ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (141ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (101ms)
-			TypeCache.Refresh (100ms)
-				TypeCache.ScanAssembly (89ms)
+		AnalyzeDomain (165ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (147ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (194ms)
+	FinalizeReload (278ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (149ms)
+		SetupLoadedEditorAssemblies (216ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (94ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
+			ProcessInitializeOnLoadAttributes (137ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,55 +116,55 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.454 seconds
-Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.672 seconds
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.417 seconds
-Domain Reload Profiling: 870ms
-	BeginReloadAssembly (113ms)
+- Finished resetting the current domain, in  0.555 seconds
+Domain Reload Profiling: 1224ms
+	BeginReloadAssembly (159ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (26ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (35ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (275ms)
-		LoadAssemblies (205ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (423ms)
+		LoadAssemblies (322ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (132ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (102ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
+		AnalyzeDomain (188ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (149ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (418ms)
+	FinalizeReload (556ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (295ms)
+		SetupLoadedEditorAssemblies (378ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (226ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (284ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3543.
-Memory consumption went from 114.3 MB to 114.3 MB.
-Total: 2.715600 ms (FindLiveObjects: 0.276100 ms CreateObjectMapping: 0.076800 ms MarkObjects: 2.261300 ms  DeleteObjects: 0.100200 ms)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3543.
+Memory consumption went from 114.4 MB to 114.3 MB.
+Total: 3.933600 ms (FindLiveObjects: 0.613200 ms CreateObjectMapping: 0.240500 ms MarkObjects: 2.861800 ms  DeleteObjects: 0.213600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,22 +182,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 217010.196029 seconds.
-  path: Assets/Unathi_Assets/building 2/Textures/building 2_DefaultMaterial_Metallic.png
-  artifactKey: Guid(d89ccef7b73df204aa24f1b9ebc8092a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/building 2/Textures/building 2_DefaultMaterial_Metallic.png using Guid(d89ccef7b73df204aa24f1b9ebc8092a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e754d8aa87393be5c3bd4d6d4f7446a9') in 0.055206 seconds
+  Time since last request: 270088.318391 seconds.
+  path: Assets/Unathi_Assets/building 1/building 1/Building 1.obj
+  artifactKey: Guid(8cf6c86995ab142408494cf1d5851ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/building 1/building 1/Building 1.obj using Guid(8cf6c86995ab142408494cf1d5851ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a10f04ae866dda4cebefc5930e5725') in 0.165857 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 46.488018 seconds.
-  path: Assets/Unathi_Assets/BUS/BUS/Bus_LowPoly_DefaultMaterial_Metallic.png
-  artifactKey: Guid(a4102f2675727ea4bb8d16b0fcc1f35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/BUS/BUS/Bus_LowPoly_DefaultMaterial_Metallic.png using Guid(a4102f2675727ea4bb8d16b0fcc1f35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42afd788a6400586165d3d3dd30e3e87') in 0.012482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 10
