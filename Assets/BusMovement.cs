@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class BusMovement : MonoBehaviour
 {
-    public float speed = 5f; 
-    Rigidbody rb;
+    public float speed = 5f;
+    public float rotationSpeed = 100f; 
+    private Rigidbody rb;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        
-        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
+        // Move the bus forward/backward
+        Vector3 movement = transform.forward * verticalInput * speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + movement);
 
-        rb.velocity = movement * speed;
+        // Rotate the bus left/right
+        float rotation = horizontalInput * rotationSpeed * Time.fixedDeltaTime;
+        Quaternion deltaRotation = Quaternion.Euler(Vector3.up * rotation);
+        rb.MoveRotation(rb.rotation * deltaRotation);
     }
 
-   
+
 }
