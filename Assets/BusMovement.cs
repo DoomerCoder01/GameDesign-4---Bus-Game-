@@ -32,6 +32,8 @@ public class BusMovement : MonoBehaviour
     //    rb.MoveRotation(rb.rotation * deltaRotation);
     //}
 
+    [SerializeField] Petrol petrol;
+
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
@@ -57,14 +59,20 @@ public class BusMovement : MonoBehaviour
 
     private void GetInput()
     {
-        // Steering Input
-        horizontalInput = Input.GetAxis("Horizontal");
+        if (petrol.petrolAmount <= 0)
+            return;
+        else
+        {
+            // Steering Input
+            horizontalInput = Input.GetAxis("Horizontal");
 
-        // Acceleration Input
-        verticalInput = Input.GetAxis("Vertical");
+            // Acceleration Input
+            verticalInput = Input.GetAxis("Vertical");
 
-        // Breaking Input
-        isBreaking = Input.GetKey(KeyCode.Space);
+            // Breaking Input
+            isBreaking = Input.GetKey(KeyCode.Space);
+        }
+        
     }
 
     private void HandleMotor()
