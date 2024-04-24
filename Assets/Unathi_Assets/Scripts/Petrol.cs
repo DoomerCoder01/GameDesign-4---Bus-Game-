@@ -33,10 +33,10 @@ public class Petrol : MonoBehaviour
             // You can add more actions here, like stopping the engine, etc.
         }
 
+        // Cap petrolAmount at maxPetrol
+        petrolAmount = Mathf.Min(petrolAmount, maxPetrol);
+
         slider.value = petrolAmount;
-        if(slider.value > maxPetrol)
-        {
-            slider.value = maxPetrol;
-        }
+
     }
 }

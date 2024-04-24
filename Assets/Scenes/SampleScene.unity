@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 33806241}
   - component: {fileID: 33806242}
-  - component: {fileID: 33806243}
   m_Layer: 0
   m_Name: Fill Up Spot (3)
   m_TagString: Untagged
@@ -178,20 +177,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 559.4346, y: 82.3021, z: 166.92908}
   m_Center: {x: 232.13086, y: -6.542652, z: 0}
---- !u!114 &33806243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33806240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
 --- !u!1001 &98232230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105549657}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 3e-45, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1309,7 +1294,6 @@ GameObject:
   m_Component:
   - component: {fileID: 635644724}
   - component: {fileID: 635644725}
-  - component: {fileID: 635644726}
   m_Layer: 0
   m_Name: Fill Up Spot (1)
   m_TagString: Untagged
@@ -1354,20 +1338,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 559.4346, y: 82.3021, z: 166.92908}
   m_Center: {x: 232.13086, y: -6.542652, z: 0}
---- !u!114 &635644726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635644723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
 --- !u!1 &638489990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,7 +1982,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18488395, y: 1e-45, z: 0, w: 0.98276037}
-  m_LocalPosition: {x: -5928, y: 242.1, z: -9444.75}
+  m_LocalPosition: {x: -5928, y: 242.1, z: -10020.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2117,11 +2087,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 985773969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
+  m_Script: {fileID: 11500000, guid: b7cf371d5dfd1654fbf07b76ab2f795d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
+  petrol: {fileID: 933072040}
+  garage: {fileID: 1681496699}
+  canTrigger: 1
 --- !u!1 &986601151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,11 +2157,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 986601151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
+  m_Script: {fileID: 11500000, guid: b7cf371d5dfd1654fbf07b76ab2f795d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
+  petrol: {fileID: 933072040}
+  garage: {fileID: 1681496699}
+  canTrigger: 1
 --- !u!1 &1002814142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,11 +3231,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091610330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
+  m_Script: {fileID: 11500000, guid: b7cf371d5dfd1654fbf07b76ab2f795d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
+  petrol: {fileID: 933072040}
+  garage: {fileID: 1681496699}
+  canTrigger: 1
 --- !u!1 &1100648874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3247,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1100648875}
   - component: {fileID: 1100648876}
-  - component: {fileID: 1100648877}
   m_Layer: 0
   m_Name: Fill Up Spot
   m_TagString: Untagged
@@ -3319,20 +3291,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 559.4346, y: 82.3021, z: 166.92908}
   m_Center: {x: 232.13086, y: -6.542652, z: 0}
---- !u!114 &1100648877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100648874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
 --- !u!1 &1107841720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,7 +3698,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1200339059}
   - component: {fileID: 1200339060}
-  - component: {fileID: 1200339061}
   m_Layer: 0
   m_Name: Fill Up Spot (2)
   m_TagString: Untagged
@@ -3785,20 +3742,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 559.4346, y: 82.3021, z: 166.92908}
   m_Center: {x: 232.13086, y: -6.542652, z: 0}
---- !u!114 &1200339061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200339058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
 --- !u!1 &1285670365
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,11 +3990,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1474073016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
+  m_Script: {fileID: 11500000, guid: b7cf371d5dfd1654fbf07b76ab2f795d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDown: 0
-  countText: {fileID: 1125496404}
+  petrol: {fileID: 933072040}
+  garage: {fileID: 1681496699}
+  canTrigger: 1
 --- !u!1 &1499645987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,6 +4225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681496698}
+  - component: {fileID: 1681496699}
   m_Layer: 0
   m_Name: Petrol stations
   m_TagString: Untagged
@@ -4305,6 +4250,20 @@ Transform:
   - {fileID: 1709171163}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681496699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681496697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c5986e018cc4446aaa5ccc7229cde9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countDown: 0
+  countText: {fileID: 1125496404}
 --- !u!1 &1685422203
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,7 +6043,7 @@ Transform:
   m_GameObject: {fileID: 1754960984513784054}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5928, y: 80, z: -9444}
+  m_LocalPosition: {x: -5928, y: 80, z: -10020}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
