@@ -22,7 +22,7 @@ public class Garage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countText.text = countDown.ToString();
+        countText.text = countDown.ToString() + "s";
         Debug.Log(countDown);
     }
 
