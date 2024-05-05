@@ -4,41 +4,56 @@ using UnityEngine;
 
 public class AIVehicleController : MonoBehaviour
 {
+    public float speed = 5f; // Speed of the vehicle
+    public Waypoint currentWaypoint; // Current waypoint the vehicle is heading towards
 
-    public float speed = 305f;
-    public Waypoint currentWaypoint;
-
-    // Start is called before the first frame update
     void Start()
     {
-        if (currentWaypoint != null)
-            MoveTowardsWaypoint(currentWaypoint);
-        else
-            Debug.LogError("No initial waypoint assigned to AIVehicleController.");
+        // Start moving towards the closest waypoint
+        MoveTowardsClosestWaypoint();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // If the vehicle has reached the current waypoint, move towards the next one
         if (currentWaypoint != null && Vector3.Distance(transform.position, currentWaypoint.transform.position) < 0.1f)
         {
-            // Get the next waypoint in the sequence
-            Transform nextWaypointTransform = currentWaypoint.GetNextWaypoint(transform);
+            // Remove the current waypoint
+            Destroy(currentWaypoint.gameObject);
 
-            // If there's a valid next waypoint, move towards it
-            if (nextWaypointTransform != null)
+            // Move towards the closest waypoint
+            MoveTowardsClosestWaypoint();
+        }
+    }
+
+    void MoveTowardsClosestWaypoint()
+    {
+        // Find the closest waypoint
+        Waypoint[] waypoints = FindObjectsOfType<Waypoint>();
+        Waypoint closestWaypoint = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Waypoint waypoint in waypoints)
+        {
+            float distance = Vector3.Distance(transform.position, waypoint.transform.position);
+            if (distance < closestDistance)
             {
-                currentWaypoint = nextWaypointTransform.GetComponent<Waypoint>();
-                MoveTowardsWaypoint(currentWaypoint);
-            }
-            else
-            {
-                Debug.Log("No next waypoint found. Vehicle stopped.");
-                enabled = false; // Disable the script if there's no next waypoint
+                closestDistance = distance;
+                closestWaypoint = waypoint;
             }
         }
 
+        // Move towards the closest waypoint if one is found
+        if (closestWaypoint != null)
+        {
+            currentWaypoint = closestWaypoint;
+            MoveTowardsWaypoint(currentWaypoint);
+        }
+        else
+        {
+            Debug.LogError("No waypoints found.");
+            enabled = false; // Disable the script if no waypoints are found
+        }
     }
 
     void MoveTowardsWaypoint(Waypoint waypoint)
@@ -53,5 +68,5 @@ public class AIVehicleController : MonoBehaviour
         // Move forward towards the waypoint
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
-
 }
+
