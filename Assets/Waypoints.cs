@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
+    [Range(0f, 2f)]
+    [SerializeField] private float waypointSize = 1f;
     private void OnDrawGizmos()
     {
         foreach (Transform t in transform)
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(t.position, 1f);
+            Gizmos.DrawWireSphere(t.position, waypointSize);
         }
 
         Gizmos.color = Color.red;
@@ -19,5 +21,22 @@ public class Waypoints : MonoBehaviour
         }
 
         Gizmos.DrawLine(transform.GetChild(transform.childCount - 1).position, transform.GetChild(0).position);
+    }
+
+    public Transform GetNextWaypoint(Transform currentWaypoint)
+    {
+        if(currentWaypoint == null)
+        {
+            return transform.GetChild(0);
+        }
+
+       if(currentWaypoint.GetSiblingIndex() < transform.childCount - 1)
+        {
+            return transform.GetChild(currentWaypoint.GetSiblingIndex() +1);
+        }
+       else
+        {
+            return transform.GetChild(0);
+        }
     }
 }
