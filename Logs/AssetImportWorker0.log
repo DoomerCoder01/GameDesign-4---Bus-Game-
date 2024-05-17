@@ -584,3 +584,143 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.562 seconds
+Refreshing native plugins compatible for Editor in 6.54 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.072 seconds
+Domain Reload Profiling: 2628ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (346ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2073ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (803ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (568ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 10.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5959 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (2.4 MB). Loaded Objects now: 6644.
+Memory consumption went from 213.3 MB to 210.9 MB.
+Total: 10.414400 ms (FindLiveObjects: 1.372300 ms CreateObjectMapping: 0.513400 ms MarkObjects: 5.937100 ms  DeleteObjects: 2.588400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2375.169079 seconds.
+  path: Assets/Unathi_Assets/stop-sign
+  artifactKey: Guid(b6b52c190bf7e0844bf0a8dab490f7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/stop-sign using Guid(b6b52c190bf7e0844bf0a8dab490f7c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b730a0053deedee704e86ead43ec34ac') in 0.003181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.567581 seconds.
+  path: Assets/Unathi_Assets/stop-sign/source
+  artifactKey: Guid(9de28474de72494439a730c8cb594cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/stop-sign/source using Guid(9de28474de72494439a730c8cb594cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762c30ab7d267b37cfc4a81cc3675dc7') in 0.001003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.060943 seconds.
+  path: Assets/Unathi_Assets/stop-sign/source/Stop Sign.fbx
+  artifactKey: Guid(5df57c19786fd3d428eeba859e4df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/stop-sign/source/Stop Sign.fbx using Guid(5df57c19786fd3d428eeba859e4df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ee290cb2afe89aad604c5d6a06e51c') in 0.133587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 6.700520 seconds.
+  path: Assets/Unathi_Assets/stop-sign/source/Stop Sign.fbx
+  artifactKey: Guid(5df57c19786fd3d428eeba859e4df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/stop-sign/source/Stop Sign.fbx using Guid(5df57c19786fd3d428eeba859e4df926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd746fc21859dbf1fa950e54f9b8dbe52') in 0.047516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 508.336154 seconds.
+  path: Assets/Prefabs/Stop Sign (2).prefab
+  artifactKey: Guid(09c7b8fa2cccbb8478337c4000be35a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Stop Sign (2).prefab using Guid(09c7b8fa2cccbb8478337c4000be35a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3ecf6e18d917776c1a60aa9da42790') in 0.034295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 22.712386 seconds.
+  path: Assets/Material/Concrete.mat
+  artifactKey: Guid(c79f5490d49ad8346af1c146551a9f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Concrete.mat using Guid(c79f5490d49ad8346af1c146551a9f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b5745907a05cc8c40b44d620abe5d7') in 0.047145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Material/HDRI.mat
+  artifactKey: Guid(9b3f84ba4bddeab4697bd4f22a709d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/HDRI.mat using Guid(9b3f84ba4bddeab4697bd4f22a709d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4b9f1b7cebc52a2e128fffd0344e1b') in 0.111377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.289679 seconds.
+  path: Assets/Material/Brown.mat
+  artifactKey: Guid(1dcd4b205794d4740bc34583a33346c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Brown.mat using Guid(1dcd4b205794d4740bc34583a33346c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be6a8902d98c241c021c45ad398c248') in 0.013024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 57.392683 seconds.
+  path: Assets/Material/Brown.mat
+  artifactKey: Guid(1dcd4b205794d4740bc34583a33346c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Brown.mat using Guid(1dcd4b205794d4740bc34583a33346c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e198e1ae8c6b54f79583275f3b3d5c') in 0.014631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
