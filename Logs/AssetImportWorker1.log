@@ -16,9 +16,15 @@ C:/Users/njabu/OneDrive/Desktop/GameDesign-4---Bus-Game-
 Logs/AssetImportWorker1.log
 -srvPort
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 63300
 Successfully changed project path to: C:/Github/GameDesign-4---Bus-Game-
 C:/Github/GameDesign-4---Bus-Game-
+=======
+53556
+Successfully changed project path to: C:/Users/njabu/OneDrive/Desktop/GameDesign-4---Bus-Game-
+C:/Users/njabu/OneDrive/Desktop/GameDesign-4---Bus-Game-
+>>>>>>> Stashed changes
 =======
 53556
 Successfully changed project path to: C:/Users/njabu/OneDrive/Desktop/GameDesign-4---Bus-Game-
@@ -56,11 +62,19 @@ C:/Users/njabu/OneDrive/Desktop/GameDesign-4---Bus-Game-
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Player connection [32244] Host "[IP] 10.0.0.101 [Port] 0 [Flags] 2 [Guid] 3698663123 [EditorId] 3698663123 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [32244] Host "[IP] 10.0.0.101 [Port] 0 [Flags] 2 [Guid] 3698663123 [EditorId] 3698663123 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 27.51 ms, found 3 plugins.
+=======
+Player connection [34788] Host "[IP] 192.168.28.160 [Port] 0 [Flags] 2 [Guid] 3431564401 [EditorId] 3431564401 [Version] 1048832 [Id] WindowsEditor(7,_Justin_Colvel) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [34788] Host "[IP] 192.168.28.160 [Port] 0 [Flags] 2 [Guid] 3431564401 [EditorId] 3431564401 [Version] 1048832 [Id] WindowsEditor(7,_Justin_Colvel) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 49.81 ms, found 3 plugins.
+>>>>>>> Stashed changes
 =======
 Player connection [34788] Host "[IP] 192.168.28.160 [Port] 0 [Flags] 2 [Guid] 3431564401 [EditorId] 3431564401 [Version] 1048832 [Id] WindowsEditor(7,_Justin_Colvel) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
@@ -80,6 +94,7 @@ Direct3D:
     VRAM:     8055 MB
     Driver:   31.0.101.4575
 Initialize mono
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
@@ -111,10 +126,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling: 1592ms
 	BeginReloadAssembly (293ms)
 >>>>>>> Stashed changes
+=======
+Mono path[0] = 'C:/Users/njabu/OneDrive/Desktop/Unity/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/njabu/OneDrive/Desktop/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/njabu/OneDrive/Desktop/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/njabu/OneDrive/Desktop/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.016822 seconds.
+- Loaded All Assemblies, in  0.950 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.645 seconds
+Domain Reload Profiling: 1592ms
+	BeginReloadAssembly (293ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		CreateAndSetChildDomain (4ms)
 	RebuildCommonClasses (126ms)
@@ -164,6 +196,31 @@ Domain Reload Profiling: 1592ms
 			ProcessInitializeOnLoadAttributes (326ms)
 			ProcessInitializeOnLoadMethodAttributes (139ms)
 >>>>>>> Stashed changes
+=======
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (136ms)
+	LoadAllAssembliesAndSetupDomain (417ms)
+		LoadAssemblies (286ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (414ms)
+			TypeCache.Refresh (411ms)
+				TypeCache.ScanAssembly (378ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (646ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (139ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -172,15 +229,21 @@ Domain Reload Profiling: 1592ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  2.134 seconds
 Refreshing native plugins compatible for Editor in 12.63 ms, found 3 plugins.
 =======
+=======
+>>>>>>> Stashed changes
 Symbol file LoadedFromMemory doesn't match image C:\Users\njabu\OneDrive\Desktop\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\njabu\OneDrive\Desktop\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  2.561 seconds
 Refreshing native plugins compatible for Editor in 11.13 ms, found 3 plugins.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
@@ -188,6 +251,7 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.894 seconds
 Domain Reload Profiling: 4009ms
@@ -197,10 +261,16 @@ Domain Reload Profiling: 4009ms
 Domain Reload Profiling: 4205ms
 	BeginReloadAssembly (370ms)
 >>>>>>> Stashed changes
+=======
+- Finished resetting the current domain, in  1.646 seconds
+Domain Reload Profiling: 4205ms
+	BeginReloadAssembly (370ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		CreateAndSetChildDomain (71ms)
 	RebuildCommonClasses (67ms)
@@ -263,6 +333,34 @@ Total: 18.297400 ms (FindLiveObjects: 1.990200 ms CreateObjectMapping: 1.631300 
 			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
+=======
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (1984ms)
+		LoadAssemblies (1192ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1016ms)
+			TypeCache.Refresh (912ms)
+				TypeCache.ScanAssembly (867ms)
+			ScanForSourceGeneratedMonoScriptInfo (64ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (1647ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1197ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (866ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+>>>>>>> Stashed changes
 		AwakeInstancesAfterBackupRestoration (15ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
 Refreshing native plugins compatible for Editor in 9.89 ms, found 3 plugins.
@@ -271,6 +369,9 @@ Unloading 5670 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 89 unused Assets / (0.8 MB). Loaded Objects now: 6126.
 Memory consumption went from 200.0 MB to 199.2 MB.
 Total: 10.576500 ms (FindLiveObjects: 1.103300 ms CreateObjectMapping: 0.965000 ms MarkObjects: 7.252500 ms  DeleteObjects: 1.253200 ms)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -310,6 +411,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 Received Prepare
 Begin MonoManager ReloadAssembly
@@ -497,6 +599,8 @@ AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
 =======
+=======
+>>>>>>> Stashed changes
 Received Import Request.
   Time since last request: 168709.829488 seconds.
   path: Assets/TerrainData_e3474713-f276-4da3-883c-ab49337ef8d1.asset
@@ -512,4 +616,7 @@ Received Import Request.
 Start importing Assets/TerrainData_9c4a0d50-1a3d-4520-b6d4-1e1155f35d1d.asset using Guid(354bde708fde00e4fa8ce7ffe7963884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd61cf7e3b49ff081e9141a395749de6') in 0.010536 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
