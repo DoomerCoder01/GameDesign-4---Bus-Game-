@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1738240910824641143}
   - component: {fileID: 3889264751321499815}
-  - component: {fileID: 4000022879260605128}
   m_Layer: 0
   m_Name: Person
   m_TagString: Untagged
@@ -26,15 +25,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478313173186259685}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6165762345585947668}
   - {fileID: 420422184083195192}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &3889264751321499815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56,19 +55,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 648.22064, y: 138.05743, z: 287.24023}
   m_Center: {x: -25.817474, y: 63.947815, z: 173.40039}
---- !u!114 &4000022879260605128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478313173186259685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa0fed3242c70f442add9947d9f305ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  passengerSpawner: {fileID: 0}
 --- !u!1 &2880386777814245425
 GameObject:
   m_ObjectHideFlags: 0
