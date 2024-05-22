@@ -9,6 +9,8 @@ public class WayPointMaker2 : MonoBehaviour
 
     [SerializeField] private float distanceThreshold = 0.1f;
 
+    [SerializeField] private Transform startingWaypoint;
+
     public float moveSpeed = 5f;
 
     private Transform currentWaypoint;
@@ -16,20 +18,21 @@ public class WayPointMaker2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentWaypoint = waypoints2.GetNextWaypoint(currentWaypoint);
+        currentWaypoint = startingWaypoint != null ? startingWaypoint : waypoints2.GetNextWaypoint(null);
+
+        // Set the initial position and orientation of the AI vehicle
         transform.position = currentWaypoint.position;
-
-        //Sets the next waypoint target
         currentWaypoint = waypoints2.GetNextWaypoint(currentWaypoint);
-
-        //rotates the vehicles
         transform.LookAt(currentWaypoint);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Move towards the current waypoint
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, moveSpeed * Time.deltaTime);
+
+        // Check if the vehicle is close enough to the current waypoint to switch to the next one
         if (Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold)
         {
             currentWaypoint = waypoints2.GetNextWaypoint(currentWaypoint);
