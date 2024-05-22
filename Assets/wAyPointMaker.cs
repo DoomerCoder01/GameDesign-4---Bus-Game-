@@ -13,23 +13,28 @@ public class wAyPointMaker : MonoBehaviour
 
     private Transform currentWaypoint;
 
+    [SerializeField] private Transform startingWaypoint;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        currentWaypoint = waypoints4.GetNextWaypoint(currentWaypoint);
+        // If a starting waypoint is set, use it, otherwise get the first waypoint
+        currentWaypoint = startingWaypoint != null ? startingWaypoint : waypoints4.GetNextWaypoint(null);
+
+        // Set the initial position and orientation of the AI vehicle
         transform.position = currentWaypoint.position;
-
-        //Sets the next waypoint target
         currentWaypoint = waypoints4.GetNextWaypoint(currentWaypoint);
-
-        //rotates the vehicles
         transform.LookAt(currentWaypoint);
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Move towards the current waypoint
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, moveSpeed * Time.deltaTime);
+
+        // Check if the vehicle is close enough to the current waypoint to switch to the next one
         if (Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold)
         {
             currentWaypoint = waypoints4.GetNextWaypoint(currentWaypoint);
