@@ -11,6 +11,7 @@ public class PassengerController : MonoBehaviour
     public Animator animator; // The Animator component
     public static int passengerCount = 0; // Passenger counter
     public Text passengerCountText; // Assign your TextMeshPro GameObject in the Inspector
+    public GameObject greenZone;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class PassengerController : MonoBehaviour
                 passengerModel.SetActive(false); // Disable the passenger model
                 passengerCount++; // Increase the passenger count
                 passengerCountText.text =  passengerCount.ToString()+ "/9"; // Update the passenger count text
+                Destroy(greenZone.gameObject);
             }
         }
     }
