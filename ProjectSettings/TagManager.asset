@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bus
+  - Passenger
+  - DropOff
+  - Ramp
+  - Vehicle
   layers:
   - Default
   - TransparentFX
@@ -12,8 +16,8 @@ TagManager:
   - Naledi
   - Water
   - UI
-  - 
-  - 
+  - terrainLayer
+  - Ramps
   - RCC
   - RCC_WheelCollider
   - RCC_DetachablePart

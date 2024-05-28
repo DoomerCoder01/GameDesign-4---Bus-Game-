@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro; // Import the TextMeshPro namespace
+using UnityEngine.UI; // Import the TextMeshPro namespace
 using System.Collections; // Import the System.Collections namespace
 
 public class CloseCallDetector : MonoBehaviour
@@ -9,7 +9,7 @@ public class CloseCallDetector : MonoBehaviour
     public int closeCallPoints = 10; // Points to award for a close call
     private bool isCloseCall = false; // Flag to track if we're in a close call
 
-    public TextMeshProUGUI scoreText; // Reference to your TextMeshProUGUI object
+    public Text scoreText; // Reference to your TextMeshProUGUI object
 
     void FixedUpdate()
     {
