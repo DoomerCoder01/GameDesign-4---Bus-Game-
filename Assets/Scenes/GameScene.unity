@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.53
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.71606654, g: 0.6931295, b: 0.6893981, a: 0.53}
+  m_IndirectSpecularColor: {r: 0.5731517, g: 0.5543921, b: 0.5514273, a: 0.53}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2541,7 +2541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &87854798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,7 +3530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &178374271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9107,7 +9107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &412463532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12968,7 +12968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &614262926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14787,7 +14787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19675,7 +19675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20975,7 +20975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1034724472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22102,7 +22102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26266,7 +26266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28519,7 +28519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28930,7 +28930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32566,7 +32566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 872081372438169011, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2933011159340955505, guid: 56780ca7afb7bf04b9f51245cb477fea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37351,7 +37351,7 @@ MonoBehaviour:
   closeCallDistance: 1.28
   rampPoints: 10
   closeCallPoints: 10
-  scoreText: {fileID: 1979845573}
+  scoreText: {fileID: 0}
 --- !u!114 &2077027875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37868,7 +37868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2091739071
 MonoBehaviour:
   m_ObjectHideFlags: 0
