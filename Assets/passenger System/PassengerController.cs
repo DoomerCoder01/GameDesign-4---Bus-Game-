@@ -9,9 +9,8 @@ public class PassengerController : MonoBehaviour
     public GameObject passengerModel; // The passenger model
     public bool isMoving = false;
     public Animator animator; // The Animator component
-    public static int passengerCount = 0; // Passenger counter
+    [SerializeField] public static int passengerCount = 0; // Passenger counter
     public Text passengerCountText; // Assign your TextMeshPro GameObject in the Inspector
-    public GameObject greenZone;
 
     void Start()
     {
@@ -21,6 +20,8 @@ public class PassengerController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("passenger count" + passengerCount.ToString());
+        passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
         if (isMoving)
         {
             // Move the passenger towards the player vehicle
@@ -34,8 +35,7 @@ public class PassengerController : MonoBehaviour
                 animator.SetBool("GetOn", false); // Stop the walking animation
                 passengerModel.SetActive(false); // Disable the passenger model
                 passengerCount++; // Increase the passenger count
-                passengerCountText.text =  passengerCount.ToString()+ "/9"; // Update the passenger count text
-                Destroy(greenZone.gameObject);
+                passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
             }
         }
     }
