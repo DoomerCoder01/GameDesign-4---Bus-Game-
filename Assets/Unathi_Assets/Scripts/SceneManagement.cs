@@ -39,9 +39,5 @@ public class SceneManagement : MonoBehaviour
     public void ActivatePanel()
     {
         panel.SetActive(true); 
-        if (panel.activeSelf)
-        {
-            panel.SetActive(false);
-        }
     }
 }
