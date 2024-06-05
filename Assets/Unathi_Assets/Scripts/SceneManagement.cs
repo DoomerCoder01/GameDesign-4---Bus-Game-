@@ -6,16 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
+   [SerializeField] GameObject panel;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void LoadNextScene()
@@ -32,5 +34,14 @@ public class SceneManagement : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ActivatePanel()
+    {
+        panel.SetActive(true); 
+        if (panel.activeSelf)
+        {
+            panel.SetActive(false);
+        }
     }
 }
