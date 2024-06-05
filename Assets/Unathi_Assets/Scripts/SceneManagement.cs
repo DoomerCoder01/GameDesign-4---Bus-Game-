@@ -28,4 +28,9 @@ public class SceneManagement : MonoBehaviour
         Debug.Log("Unathi");
         SceneManager.LoadScene("IntroLevel");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
