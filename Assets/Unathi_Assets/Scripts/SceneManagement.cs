@@ -40,4 +40,9 @@ public class SceneManagement : MonoBehaviour
     {
         panel.SetActive(true); 
     }
+
+    public void DeactivatePanel()
+    {
+        panel.SetActive(false);
+    }
 }
