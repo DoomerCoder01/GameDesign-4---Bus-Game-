@@ -28,7 +28,7 @@ public class SceneManagement : MonoBehaviour
     public void LoadFirstLevel()
     {
         Debug.Log("Unathi");
-        SceneManager.LoadScene("IntroLevel");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void ExitGame()
