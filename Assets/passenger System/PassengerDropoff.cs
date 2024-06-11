@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PassengerDropoff : MonoBehaviour
 {
-    public GameObject passengerPrefab; // Assign your passenger prefab in the Inspector
     private bool isInsideTrigger = false;
     private bool hasSpawnedPassenger = false;
     public float timeInsideTrigger;
+    public int currencyReward = 100; // The reward for dropping off a passenger
+    private PassengerManager passengerManager; // Reference to PassengerManager
+
+    void Start()
+    {
+        // Find and reference the PassengerManager
+        passengerManager = FindObjectOfType<PassengerManager>();
+    }
 
     void Update()
     {
@@ -18,10 +25,13 @@ public class PassengerDropoff : MonoBehaviour
             {
                 // Deduct the passenger count
                 PassengerController.passengerCount--;
-                // Spawn a new passenger prefab within the trigger bounds
-                GameObject newPassenger = Instantiate(passengerPrefab, transform.position, Quaternion.identity);
-                // Destroy the new passenger after 6 seconds
-                Destroy(newPassenger, 6f);
+                // Reward the player with currency
+                PassengerController.AddCurrency(currencyReward);
+                Debug.Log("Player received " + currencyReward + " currency. Total currency: " + PassengerController.currency);
+
+                // Notify the PassengerManager about the drop-off
+                passengerManager.HandlePassengerDropoff();
+
                 // Set hasSpawnedPassenger to true
                 hasSpawnedPassenger = true;
                 // Reset the timeInsideTrigger

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class PassengerController : MonoBehaviour
 {
     public GameObject playerVehicle; // Assign your player vehicle in the Inspector
@@ -10,7 +11,11 @@ public class PassengerController : MonoBehaviour
     public bool isMoving = false;
     public Animator animator; // The Animator component
     [SerializeField] public static int passengerCount = 0; // Passenger counter
-    public Text passengerCountText; // Assign your TextMeshPro GameObject in the Inspector
+    public Text passengerCountText; // Assign your Text UI component in the Inspector
+    public static int currency = 0; // Static variable to keep track of currency
+
+    public delegate void CurrencyChanged(int newCurrencyAmount);
+    public static event CurrencyChanged OnCurrencyChanged;
 
     void Start()
     {
@@ -20,8 +25,18 @@ public class PassengerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("passenger count" + passengerCount.ToString());
-        passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
+        Debug.Log("passenger count: " + passengerCount.ToString());
+
+        // Check if passengerCountText is assigned before updating it
+        if (passengerCountText != null)
+        {
+            passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
+        }
+        else
+        {
+            Debug.LogWarning("PassengerCountText is not assigned in the Inspector.");
+        }
+
         if (isMoving)
         {
             // Move the passenger towards the player vehicle
@@ -35,10 +50,18 @@ public class PassengerController : MonoBehaviour
                 animator.SetBool("GetOn", false); // Stop the walking animation
                 passengerModel.SetActive(false); // Disable the passenger model
                 passengerCount++; // Increase the passenger count
-                passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
+
+                if (passengerCountText != null)
+                {
+                    passengerCountText.text = passengerCount.ToString(); // Update the passenger count text
+                }
             }
         }
     }
+
+    public static void AddCurrency(int amount)
+    {
+        currency += amount;
+        OnCurrencyChanged?.Invoke(currency); // Notify listeners that currency has changed
+    }
 }
-
-
