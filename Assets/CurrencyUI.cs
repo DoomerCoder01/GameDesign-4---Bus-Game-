@@ -11,6 +11,11 @@ public class CurrencyUI : MonoBehaviour
         UpdateCurrencyDisplay(PassengerController.currency);
     }
 
+    void Update()
+    {
+        currencyText.text = "Currency: " + PassengerController.currency.ToString();
+    }
+
     public void UpdateCurrencyDisplay(int newCurrencyAmount)
     {
         currencyText.text = "Currency: " + newCurrencyAmount.ToString();
