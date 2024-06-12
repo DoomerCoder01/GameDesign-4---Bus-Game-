@@ -7,8 +7,6 @@ public class TriggerController : MonoBehaviour
     public PassengerController passengerController; // Assign your PassengerController in the Inspector
     private Vector3 originalPosition; // To store the original position of the passenger
 
-    [SerializeField] GameObject greenBox;
-
     void Start()
     {
         Invoke("StoreOriginalPosition", 0.5f); // Wait for half a second before storing the original position
@@ -37,7 +35,6 @@ public class TriggerController : MonoBehaviour
             passengerController.isMoving = false;
             passengerController.animator.SetBool("GetON", false); // Stop the walking animation
             passengerController.passengerModel.transform.position = originalPosition; // Reset the passenger to their original position
-            greenBox.SetActive(false);
         }
     }
 }

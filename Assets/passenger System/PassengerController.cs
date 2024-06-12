@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class PassengerController : MonoBehaviour
 {
+    [SerializeField] GameObject greenBox;
+
     public GameObject playerVehicle; // Assign your player vehicle in the Inspector
     public float speed = 5f; // Speed at which the passenger moves towards the vehicle
     public GameObject passengerModel; // The passenger model
@@ -51,6 +53,8 @@ public class PassengerController : MonoBehaviour
                 animator.SetBool("GetOn", false); // Stop the walking animation
                 passengerModel.SetActive(false); // Disable the passenger model
                 passengerCount++; // Increase the passenger count
+
+                greenBox.SetActive(false);
 
                 if (passengerCountText != null)
                 {
