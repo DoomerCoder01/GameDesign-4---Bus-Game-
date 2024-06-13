@@ -10408,6 +10408,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1959030373088092, guid: 34941e62fdb557544ada8af1b5333ae0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959030373088092, guid: 34941e62fdb557544ada8af1b5333ae0, type: 3}
       propertyPath: m_TagString
       value: Bus
       objectReference: {fileID: 0}
@@ -42080,9 +42084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29cdbab547557d49909fd1fcbbf160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passengerPrefab: {fileID: 478313173186259685, guid: 531338a96aafb9847a6de815eb885450, type: 3}
-  passengerZonePrefab: {fileID: 0}
-  numberOfPassengers: 9
 --- !u!1 &2086670521
 GameObject:
   m_ObjectHideFlags: 0
