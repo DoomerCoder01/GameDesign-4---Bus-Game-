@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker3
 -projectPath
 C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker3.log
 -srvPort
 60591
 Successfully changed project path to: C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
@@ -49,11 +49,11 @@ C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24932] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 2194867211 [EditorId] 2194867211 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [34952] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 227759055 [EditorId] 227759055 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [24932] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 2194867211 [EditorId] 2194867211 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [34952] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 227759055 [EditorId] 227759055 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 12.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007569 seconds.
-- Loaded All Assemblies, in  0.467 seconds
+Registered in 0.007089 seconds.
+- Loaded All Assemblies, in  0.367 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.281 seconds
-Domain Reload Profiling: 747ms
-	BeginReloadAssembly (178ms)
+- Finished resetting the current domain, in  0.246 seconds
+Domain Reload Profiling: 612ms
+	BeginReloadAssembly (117ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (175ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (115ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (149ms)
-			TypeCache.Refresh (148ms)
-				TypeCache.ScanAssembly (133ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (127ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (282ms)
+	FinalizeReload (247ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (216ms)
+		SetupLoadedEditorAssemblies (189ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (141ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			ProcessInitializeOnLoadAttributes (124ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,58 +119,58 @@ Please note that FBX files exported from Cinema4D are still supported.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\Desktop\Stuffff\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\Desktop\Stuffff\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.999 seconds
-Refreshing native plugins compatible for Editor in 4.70 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.767 seconds
+Refreshing native plugins compatible for Editor in 4.29 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.949 seconds
-Domain Reload Profiling: 1941ms
-	BeginReloadAssembly (196ms)
+- Finished resetting the current domain, in  0.766 seconds
+Domain Reload Profiling: 1529ms
+	BeginReloadAssembly (145ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (688ms)
-		LoadAssemblies (447ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (528ms)
+		LoadAssemblies (334ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (346ms)
-			TypeCache.Refresh (301ms)
-				TypeCache.ScanAssembly (277ms)
-			ScanForSourceGeneratedMonoScriptInfo (29ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (950ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (234ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (766ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (735ms)
+		SetupLoadedEditorAssemblies (576ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (106ms)
-			ProcessInitializeOnLoadAttributes (523ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (406ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 5.63 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 4.40 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6081 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 126 unused Assets / (3.2 MB). Loaded Objects now: 6509.
-Memory consumption went from 218.4 MB to 215.2 MB.
-Total: 7.129600 ms (FindLiveObjects: 0.755400 ms CreateObjectMapping: 0.751200 ms MarkObjects: 3.868100 ms  DeleteObjects: 1.753600 ms)
+Memory consumption went from 218.1 MB to 214.9 MB.
+Total: 4.693200 ms (FindLiveObjects: 0.419600 ms CreateObjectMapping: 0.411400 ms MarkObjects: 2.654200 ms  DeleteObjects: 1.207000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -188,60 +188,80 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 678999.818416 seconds.
-  path: Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset
-  artifactKey: Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset using Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b35daf0ddd4cd28fc810bdc79ec43e5') in 0.030262 seconds
+  Time since last request: 680408.276400 seconds.
+  path: Assets/Material/Peach.mat
+  artifactKey: Guid(31ffd73c08bf24a4ba76e661ef5dc005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Peach.mat using Guid(31ffd73c08bf24a4ba76e661ef5dc005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bd6925163735c44eadf3b9f0b51a0e') in 0.103486 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/TerrainData_3bc12ade-60a8-4c6c-82ae-d9abb19cb95f.asset
-  artifactKey: Guid(b4a307beed4e4ae41ad1634ed5f01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_3bc12ade-60a8-4c6c-82ae-d9abb19cb95f.asset using Guid(b4a307beed4e4ae41ad1634ed5f01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca719e9adc1977127923ec99823e9177') in 0.007802 seconds
+  Time since last request: 5.100974 seconds.
+  path: Assets/passenger System/Drop off.prefab
+  artifactKey: Guid(06edb3aaf17eee046a9e76659b340b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Drop off.prefab using Guid(06edb3aaf17eee046a9e76659b340b2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfca6cc3ba1beaba16766b4a0a96ef2e') in 0.070373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.277495 seconds.
+  path: Assets/passenger System/Passenger.prefab
+  artifactKey: Guid(e8cf0d9540260494f8957406788e4a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Passenger.prefab using Guid(e8cf0d9540260494f8957406788e4a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3ec2b01eaa40f6ea121cc9e38190fa') in 0.044667 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 292
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/passenger System/see through.mat
+  artifactKey: Guid(6a1bfb621b6cad844886c794ecab9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/see through.mat using Guid(6a1bfb621b6cad844886c794ecab9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a9069cdf4d8e76ee395b92465cbfd0') in 0.018301 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/TerrainData_fb141b95-bddb-49e2-adf1-c5ef1bd807fc.asset
-  artifactKey: Guid(7def02ebca5a4434bbc371262d62a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_fb141b95-bddb-49e2-adf1-c5ef1bd807fc.asset using Guid(7def02ebca5a4434bbc371262d62a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51656b3de5346df6c73a0979e535c9') in 0.010665 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/passenger System/Passenger 2.prefab
+  artifactKey: Guid(49b710aa443c91e4ba1c74073b1e7cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Passenger 2.prefab using Guid(49b710aa443c91e4ba1c74073b1e7cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7271c3a6c475bb1e4c3fbd347665831c') in 0.036167 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 449
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/passenger System/green see through.mat
+  artifactKey: Guid(593f9976020ccc44b8e5b290fb7854eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/green see through.mat using Guid(593f9976020ccc44b8e5b290fb7854eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9e9a53ef0c25df32d4069f63d16c64') in 0.012787 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/New Terrain 2.asset
-  artifactKey: Guid(ea50b1d22be94dd4f99793e15e1a2f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(ea50b1d22be94dd4f99793e15e1a2f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13daec22bdb1571532df5eab84ea70ca') in 0.010553 seconds
+  Time since last request: 8.040362 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Car_3.prefab
+  artifactKey: Guid(512151c1530b99343a884b12ee9c5e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Car_3.prefab using Guid(512151c1530b99343a884b12ee9c5e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2692e769e936c8867fe1c4a55392e3a') in 0.050540 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 33
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/TerrainData_60796673-5290-4967-94ed-0e86c057e6ea.asset
-  artifactKey: Guid(b52d63f4364445548858c355ca7864fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_60796673-5290-4967-94ed-0e86c057e6ea.asset using Guid(b52d63f4364445548858c355ca7864fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcbbc362a58edb62678f542048cadc2') in 0.008818 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab
+  artifactKey: Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab using Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef542730c0351980e36d5dd602b8087') in 0.036958 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 1338.188888 seconds.
-  path: Assets/Prefabs/Person.prefab
-  artifactKey: Guid(531338a96aafb9847a6de815eb885450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Person.prefab using Guid(531338a96aafb9847a6de815eb885450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b958e482a921d5a706126f01c9f5089b') in 0.185183 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.303071 seconds.
-  path: Assets/Prefabs/tree (67).prefab
-  artifactKey: Guid(a4090eb937d490d488ee194bec46ded3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/tree (67).prefab using Guid(a4090eb937d490d488ee194bec46ded3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a431f46fb75380fdaf3f116544c5165c') in 0.163084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
+Number of asset objects unloaded after import = 33
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
