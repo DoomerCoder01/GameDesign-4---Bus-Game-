@@ -28,7 +28,8 @@ public class SceneManagement : MonoBehaviour
     public void LoadFirstLevel()
     {
         Debug.Log("Unathi");
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("Anele level 2");
     }
 
     public void ExitGame()

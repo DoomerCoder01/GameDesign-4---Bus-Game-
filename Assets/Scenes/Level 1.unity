@@ -2279,6 +2279,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &59051892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59051886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &62944698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2403,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252767074}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252767075}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &75891201
 GameObject:
@@ -2659,6 +2675,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &77933610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77933604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &79771807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2736,6 +2765,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 79771810}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 79771814}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 79771813}
@@ -2837,6 +2869,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &79771814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79771809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &85363782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,6 +3334,9 @@ PrefabInstance:
       addedObject: {fileID: 98680707}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 98680711}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 98680710}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &98680705 stripped
@@ -3388,6 +3436,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &98680711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98680706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &103486361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,6 +4777,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1288963306}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1288963307}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &148992426
 GameObject:
@@ -5118,6 +5182,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 797190873}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797190874}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &164655584
 GameObject:
@@ -5427,6 +5494,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 77933609}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 77933610}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &173909791
 GameObject:
@@ -5876,6 +5946,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1264312003}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264312004}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &184272878
 GameObject:
@@ -7234,6 +7307,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1017097291}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017097292}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &219096932
 GameObject:
@@ -10408,6 +10484,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 443274355}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443274356}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &368522494
 GameObject:
@@ -11674,6 +11753,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1481202619}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1481202620}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &406538368
 GameObject:
@@ -13138,6 +13220,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &443274356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443274350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &445918562
 GameObject:
   m_ObjectHideFlags: 0
@@ -13941,6 +14036,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &460330034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460330028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &461843253
 GameObject:
   m_ObjectHideFlags: 0
@@ -15513,6 +15621,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1370785839}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1370785840}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &505310275
 GameObject:
@@ -16513,6 +16624,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &518315181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518315175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &518728681
 GameObject:
   m_ObjectHideFlags: 0
@@ -17665,6 +17789,9 @@ PrefabInstance:
       addedObject: {fileID: 557644835}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 557644839}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 557644838}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &557644833 stripped
@@ -17764,6 +17891,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &557644839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557644834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &560713546
 GameObject:
   m_ObjectHideFlags: 0
@@ -18616,6 +18756,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2051677340}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2051677341}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1001 &576041363
 PrefabInstance:
@@ -19073,6 +19216,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &589325096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589325090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &592564433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19518,6 +19674,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 905276885}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 905276886}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &604096540
 GameObject:
@@ -20445,6 +20604,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907641430}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907641431}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &640201880 stripped
 GameObject:
@@ -20543,6 +20705,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &640201886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640201880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &648330995
 GameObject:
   m_ObjectHideFlags: 0
@@ -20677,6 +20852,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1901850489}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1901850490}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1001 &651029835
 PrefabInstance:
@@ -20758,6 +20936,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1381090260}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1381090261}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &656442060 stripped
 GameObject:
@@ -20856,6 +21037,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &656442066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656442060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &659227456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22776,6 +22970,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 840376839}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840376840}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &725535664
 GameObject:
@@ -24741,6 +24938,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1361177048}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1361177049}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &791798904
 GameObject:
@@ -25005,6 +25205,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &797190874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797190868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &798951620
 GameObject:
   m_ObjectHideFlags: 0
@@ -26502,6 +26715,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1989462267}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1989462268}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &840376834 stripped
 GameObject:
@@ -26600,6 +26816,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &840376840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840376834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &849157627
 GameObject:
   m_ObjectHideFlags: 0
@@ -27280,6 +27509,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 460330033}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 460330034}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &875039954
 GameObject:
@@ -27952,6 +28184,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 656442065}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 656442066}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &887686069
 GameObject:
@@ -28608,6 +28843,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &905276886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905276880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &907764073
 GameObject:
   m_ObjectHideFlags: 0
@@ -28745,6 +28993,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 908063385}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 908063386}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &908063380 stripped
 Transform:
@@ -28843,6 +29094,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &908063386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908063381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &908373099
 GameObject:
   m_ObjectHideFlags: 0
@@ -30350,6 +30614,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 589325095}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 589325096}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &963029634
 GameObject:
@@ -32315,6 +32582,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1000521672}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1000521673}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1000521667 stripped
 Transform:
@@ -32413,6 +32683,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1000521673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000521668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1002235005
 GameObject:
   m_ObjectHideFlags: 0
@@ -33801,6 +34084,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1017097292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017097286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1019648968
 GameObject:
   m_ObjectHideFlags: 0
@@ -37035,6 +37331,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1832634191}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1832634192}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &1117541571
 GameObject:
@@ -37522,6 +37821,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1123242936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123242930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1125019308
 GameObject:
   m_ObjectHideFlags: 0
@@ -38411,6 +38723,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 640201885}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 640201886}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &1149672054
 GameObject:
@@ -40329,6 +40644,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1218655246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218655240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1224857248
 GameObject:
   m_ObjectHideFlags: 0
@@ -41000,6 +41328,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1326545546}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1326545547}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1240994888
 GameObject:
@@ -41402,6 +41733,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1252767075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252767069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1253791055
 GameObject:
   m_ObjectHideFlags: 0
@@ -41649,6 +41993,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1264312004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264311998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1272143330
 GameObject:
   m_ObjectHideFlags: 0
@@ -42375,6 +42732,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1288963307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288963301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1289759970
 GameObject:
   m_ObjectHideFlags: 0
@@ -43609,6 +43979,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1326545547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326545541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1326564353
 GameObject:
   m_ObjectHideFlags: 0
@@ -43822,6 +44205,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1333849586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333849580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1334005840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44646,6 +45042,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1361177049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361177043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1362315876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44948,6 +45357,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1369190649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369190643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1370785834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
@@ -45045,6 +45467,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1370785840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370785834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1376710096
 GameObject:
   m_ObjectHideFlags: 0
@@ -45282,6 +45717,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1381090261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381090255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1381543370
 GameObject:
   m_ObjectHideFlags: 0
@@ -47052,6 +47500,9 @@ PrefabInstance:
       addedObject: {fileID: 1423127945}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1423127949}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1423127948}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1423127943 stripped
@@ -47151,6 +47602,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1423127949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423127944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1423821784
 GameObject:
   m_ObjectHideFlags: 0
@@ -48312,6 +48776,9 @@ PrefabInstance:
       addedObject: {fileID: 1123242932}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1123242936}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1123242935}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1480027705
@@ -48494,6 +48961,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1481202620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481202614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1482040528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1959030373088092, guid: 34941e62fdb557544ada8af1b5333ae0, type: 3}
@@ -50485,6 +50965,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1548131383}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1548131384}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1548131378 stripped
 Transform:
@@ -50583,6 +51066,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1548131384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548131379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1548671878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50663,6 +51159,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1876418782}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876418783}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1550720011
 GameObject:
@@ -50874,6 +51373,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1551398966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551398960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1551975369
 GameObject:
   m_ObjectHideFlags: 0
@@ -52438,6 +52950,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 518315180}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 518315181}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1628534433
 GameObject:
@@ -53202,6 +53717,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 59051891}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 59051892}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1001 &1658831055
 PrefabInstance:
@@ -53283,6 +53801,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1970855797}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1970855798}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &1659792415
 GameObject:
@@ -54541,6 +55062,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1892727685}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1892727686}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1689437802
 GameObject:
@@ -54923,6 +55447,9 @@ PrefabInstance:
       addedObject: {fileID: 1702285761}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1702285765}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1702285764}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1702285759 stripped
@@ -55022,6 +55549,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1702285765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702285760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1703957396
 GameObject:
   m_ObjectHideFlags: 0
@@ -55591,6 +56131,9 @@ PrefabInstance:
       addedObject: {fileID: 1714194078}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1714194082}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1714194081}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1714194076 stripped
@@ -55690,6 +56233,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1714194082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714194077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1714197469
 GameObject:
   m_ObjectHideFlags: 0
@@ -55853,6 +56409,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1715584845}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715584846}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1715584840 stripped
 Transform:
@@ -55951,6 +56510,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1715584846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715584841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1716308861
 GameObject:
   m_ObjectHideFlags: 0
@@ -57810,6 +58382,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1761479172}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1761479173}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1761479167 stripped
 Transform:
@@ -57908,6 +58483,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1761479173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761479168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1762652129
 GameObject:
   m_ObjectHideFlags: 0
@@ -58856,6 +59444,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1799060709}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1799060710}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1799060704 stripped
 Transform:
@@ -58954,6 +59545,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1799060710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799060705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1799474558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59480,6 +60084,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1812896552}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1812896553}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1812896547 stripped
 Transform:
@@ -59578,6 +60185,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1812896553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812896548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1814076324
 GameObject:
   m_ObjectHideFlags: 0
@@ -60114,6 +60734,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1823197442}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1823197445}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1823197440 stripped
 Transform:
@@ -60191,6 +60814,19 @@ MonoBehaviour:
   distanceThreshold: 0.1
   moveSpeed: 2
   startingWaypoint: {fileID: 273017213}
+--- !u!114 &1823197445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823197441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1825334789 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
@@ -60675,6 +61311,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1832634192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832634186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1834345243
 GameObject:
   m_ObjectHideFlags: 0
@@ -61109,6 +61758,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1848742914}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848742915}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &1848742909 stripped
 Transform:
@@ -61207,6 +61859,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1848742915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848742910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1851470489
 GameObject:
   m_ObjectHideFlags: 0
@@ -61370,6 +62035,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1369190648}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369190649}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!4 &1853721894 stripped
 Transform:
@@ -61681,6 +62349,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1218655245}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1218655246}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &1865662176
 GameObject:
@@ -62318,6 +62989,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1876418783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876418777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1878798540
 GameObject:
   m_ObjectHideFlags: 0
@@ -62974,6 +63658,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1892727686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892727680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1893384747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63535,6 +64232,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1901850490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901850484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1001 &1907586294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63697,6 +64407,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1907641431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907641425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1909783184
 GameObject:
   m_ObjectHideFlags: 0
@@ -65519,6 +66242,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1970855798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970855792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1974934403
 GameObject:
   m_ObjectHideFlags: 0
@@ -66378,6 +67114,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1989462268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989462262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &1992419608
 GameObject:
   m_ObjectHideFlags: 0
@@ -67806,6 +68555,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1551398965}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1551398966}
   m_SourcePrefab: {fileID: 100100000, guid: 2bf20d85d2a68bf40ab5db8ce865c0f8, type: 3}
 --- !u!1 &2028556097
 GameObject:
@@ -68555,6 +69307,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2051677341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051677335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &2052446230
 GameObject:
   m_ObjectHideFlags: 0
@@ -71309,6 +72074,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2100920767}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2100920768}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!4 &2100920762 stripped
 Transform:
@@ -71407,6 +72175,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2100920768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100920763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ab88862533ab642980877f1a7692b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodEffectPrefab: {fileID: 634549112542764026, guid: da9b9b59921f35e4893b9468a6962c27, type: 3}
 --- !u!1 &2100925966
 GameObject:
   m_ObjectHideFlags: 0
@@ -72648,6 +73429,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1333849585}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1333849586}
   m_SourcePrefab: {fileID: 100100000, guid: 637ee0ac6adcc884ba25bdb99e3ccb90, type: 3}
 --- !u!1 &2129097457 stripped
 GameObject:
