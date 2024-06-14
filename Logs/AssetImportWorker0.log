@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16145 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16196 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/David/Documents/GameDesign 4 - Bus Game
+C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63516
-Successfully changed project path to: C:/Users/David/Documents/GameDesign 4 - Bus Game
-C:/Users/David/Documents/GameDesign 4 - Bus Game
+50364
+Successfully changed project path to: C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
+C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,64 +49,64 @@ C:/Users/David/Documents/GameDesign 4 - Bus Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22896] Host "[IP] 192.168.136.236 [Port] 0 [Flags] 2 [Guid] 4160113493 [EditorId] 4160113493 [Version] 1048832 [Id] WindowsEditor(7,Playstation-4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17272] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 3296756304 [EditorId] 3296756304 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22896] Host "[IP] 192.168.136.236 [Port] 0 [Flags] 2 [Guid] 4160113493 [EditorId] 4160113493 [Version] 1048832 [Id] WindowsEditor(7,Playstation-4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17272] Host "[IP] 192.168.28.247 [Port] 0 [Flags] 2 [Guid] 3296756304 [EditorId] 3296756304 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CFSRC23) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 13.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/David/Documents/GameDesign 4 - Bus Game/Assets
+[Subsystems] Discovering subsystems at path C:/Users/petro/Desktop/Stuffff/GameDesign-4---Bus-Game-/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
     Vendor:   NVIDIA
-    VRAM:     5966 MB
-    Driver:   32.0.15.5599
+    VRAM:     5968 MB
+    Driver:   31.0.15.3209
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011491 seconds.
-- Loaded All Assemblies, in  0.387 seconds
+Registered in 0.027802 seconds.
+- Loaded All Assemblies, in  1.504 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.280 seconds
-Domain Reload Profiling: 664ms
-	BeginReloadAssembly (117ms)
+- Finished resetting the current domain, in  1.086 seconds
+Domain Reload Profiling: 2585ms
+	BeginReloadAssembly (530ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (152ms)
-		LoadAssemblies (114ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (213ms)
+	RebuildNativeTypeToScriptingClass (49ms)
+	initialDomainReloadingComplete (241ms)
+	LoadAllAssembliesAndSetupDomain (464ms)
+		LoadAssemblies (514ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (150ms)
-			TypeCache.Refresh (147ms)
-				TypeCache.ScanAssembly (130ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (460ms)
+			TypeCache.Refresh (455ms)
+				TypeCache.ScanAssembly (409ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (280ms)
+	FinalizeReload (1088ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (213ms)
+		SetupLoadedEditorAssemblies (834ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (25ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (139ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (562ms)
+			ProcessInitializeOnLoadMethodAttributes (201ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,60 +117,60 @@ Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D fil
 
 Please note that FBX files exported from Cinema4D are still supported.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\David\Documents\GameDesign 4 - Bus Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\David\Documents\GameDesign 4 - Bus Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.884 seconds
-Refreshing native plugins compatible for Editor in 4.91 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\Desktop\Stuffff\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\Desktop\Stuffff\GameDesign-4---Bus-Game-\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.908 seconds
+Refreshing native plugins compatible for Editor in 18.27 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.824 seconds
-Domain Reload Profiling: 1702ms
-	BeginReloadAssembly (165ms)
+- Finished resetting the current domain, in  3.179 seconds
+Domain Reload Profiling: 6068ms
+	BeginReloadAssembly (563ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (606ms)
-		LoadAssemblies (419ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (130ms)
+	RebuildNativeTypeToScriptingClass (54ms)
+	initialDomainReloadingComplete (130ms)
+	LoadAllAssembliesAndSetupDomain (2009ms)
+		LoadAssemblies (1271ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (285ms)
-			TypeCache.Refresh (243ms)
-				TypeCache.ScanAssembly (224ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (825ms)
+		AnalyzeDomain (1080ms)
+			TypeCache.Refresh (943ms)
+				TypeCache.ScanAssembly (889ms)
+			ScanForSourceGeneratedMonoScriptInfo (96ms)
+			ResolveRequiredComponents (37ms)
+	FinalizeReload (3182ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (616ms)
+		SetupLoadedEditorAssemblies (2417ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (21ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (98ms)
-			ProcessInitializeOnLoadAttributes (428ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (387ms)
+			ProcessInitializeOnLoadAttributes (1700ms)
+			ProcessInitializeOnLoadMethodAttributes (238ms)
+			AfterProcessingInitializeOnLoad (36ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 6.00 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 14.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6081 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 205 unused Assets / (9.3 MB). Loaded Objects now: 6445.
-Memory consumption went from 225.4 MB to 216.1 MB.
-Total: 8.721700 ms (FindLiveObjects: 0.805000 ms CreateObjectMapping: 0.791500 ms MarkObjects: 3.072600 ms  DeleteObjects: 4.051100 ms)
+Unloading 126 unused Assets / (3.2 MB). Loaded Objects now: 6509.
+Memory consumption went from 218.1 MB to 214.9 MB.
+Total: 19.280700 ms (FindLiveObjects: 1.265000 ms CreateObjectMapping: 1.453100 ms MarkObjects: 11.279200 ms  DeleteObjects: 5.280000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,68 +186,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 523316.528774 seconds.
-  path: Assets/Scenes/Level 2.unity
-  artifactKey: Guid(b6bbfaa0bd3912544af82f4cc4971c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 2.unity using Guid(b6bbfaa0bd3912544af82f4cc4971c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7ca2ca094b50994db0f7e47b691381') in 0.002866 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 4.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 118 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (9.2 MB). Loaded Objects now: 6445.
-Memory consumption went from 131.2 MB to 122.0 MB.
-Total: 6.929300 ms (FindLiveObjects: 0.442200 ms CreateObjectMapping: 0.445100 ms MarkObjects: 2.650200 ms  DeleteObjects: 3.391200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 529.469164 seconds.
-  path: Assets/Anele/NPC STUFF/Ch06_nonPBR@Breathing Idle.fbx
-  artifactKey: Guid(0beab2a6c55279b498860e64c5286e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anele/NPC STUFF/Ch06_nonPBR@Breathing Idle.fbx using Guid(0beab2a6c55279b498860e64c5286e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0decdbc06e008785d6158b6916a00b25') in 0.037482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Anele/NPC STUFF/The Boss@Breathing Idle.fbx
-  artifactKey: Guid(2bf20d85d2a68bf40ab5db8ce865c0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anele/NPC STUFF/The Boss@Breathing Idle.fbx using Guid(2bf20d85d2a68bf40ab5db8ce865c0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd52f861b3360b8ea08b5aa8ebd6815') in 0.258272 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 191
-========================================================================
-Received Import Request.
-  Time since last request: 37.176146 seconds.
-  path: Assets/Scenes/AneleLevel 1.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AneleLevel 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8d63752c2e38aa5b7b4f879c8c5b49') in 0.001097 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.773358 seconds.
+  Time since last request: 457.588086 seconds.
   path: Assets/Scenes/GameScene 1.unity
   artifactKey: Guid(2dc71e4c762e57d46bb28e12a4ac4eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene 1.unity using Guid(2dc71e4c762e57d46bb28e12a4ac4eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497f6daeeb3a602703561318345c09fd') in 0.000621 seconds
+Start importing Assets/Scenes/GameScene 1.unity using Guid(2dc71e4c762e57d46bb28e12a4ac4eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497f6daeeb3a602703561318345c09fd') in 0.006028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Scenes/AneleLevel 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AneleLevel 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c785f9ce87ab02496b39846250735a5') in 0.001810 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
