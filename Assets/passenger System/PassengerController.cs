@@ -28,7 +28,7 @@ public class PassengerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("passenger count: " + passengerCount.ToString());
+        // Debug.Log("passenger count: " + passengerCount.ToString());
 
         // Check if passengerCountText is assigned before updating it
         if (passengerCountText != null)

@@ -14,6 +14,7 @@ public class CurrencyUI : MonoBehaviour
     void Update()
     {
         currencyText.text = "Currency: " + PassengerController.currency.ToString();
+        Debug.Log(gameObject.name);
     }
 
     public void UpdateCurrencyDisplay(int newCurrencyAmount)

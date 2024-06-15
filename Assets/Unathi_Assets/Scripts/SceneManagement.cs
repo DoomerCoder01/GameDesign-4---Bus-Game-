@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneManagement : MonoBehaviour
 {
    [SerializeField] GameObject panel;
+    [SerializeField] GameObject menuPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -20,16 +21,22 @@ public class SceneManagement : MonoBehaviour
 
     }
 
-    public void LoadNextScene()
+    public void LoadFirstLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level 1");
     }
 
-    public void LoadFirstLevel()
+    public void LoadSecondLevel()
     {
         Debug.Log("Unathi");
         SceneManager.LoadScene("Level 2");
         SceneManager.LoadScene("Anele level 2");
+    }
+
+    public void LoadMainMenu()
+    {
+        Debug.Log("Menu");
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void ExitGame()
@@ -45,5 +52,15 @@ public class SceneManagement : MonoBehaviour
     public void DeactivatePanel()
     {
         panel.SetActive(false);
+    }
+
+    public void ActivateMenuPanel()
+    {
+        menuPanel.SetActive(true);
+    }
+
+    public void DeactivateMenuPanel()
+    {
+        menuPanel.SetActive(false);
     }
 }
