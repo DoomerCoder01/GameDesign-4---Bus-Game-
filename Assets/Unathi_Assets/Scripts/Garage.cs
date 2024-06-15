@@ -23,7 +23,7 @@ public class Garage : MonoBehaviour
     void Update()
     {
         countText.text = countDown.ToString() + "s";
-        Debug.Log(countDown);
+        //Debug.Log(countDown);
     }
 
     public void StartCountdown()
