@@ -28,7 +28,7 @@ public class PassengerDropoff : MonoBehaviour
                 // Deduct the passenger count
                 PassengerController.passengerCount--;
 
-                if(level1 != null)
+                if (level1 != null)
                 {
                     level1.passengerCount++;
                 }
@@ -36,8 +36,15 @@ public class PassengerDropoff : MonoBehaviour
                 PassengerController.AddCurrency(currencyReward);
                 Debug.Log("Player received " + currencyReward + " currency. Total currency: " + PassengerController.currency);
 
-                // Notify the PassengerManager about the drop-off
-                passengerManager.HandlePassengerDropoff();
+                // Check if passengerManager is not null before calling HandlePassengerDropoff
+                if (passengerManager != null)
+                {
+                    passengerManager.HandlePassengerDropoff();
+                }
+                else
+                {
+                    Debug.LogError("PassengerManager not found!");
+                }
 
                 // Set hasSpawnedPassenger to true
                 hasSpawnedPassenger = true;
