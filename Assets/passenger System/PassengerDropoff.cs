@@ -45,6 +45,8 @@ public class PassengerDropoff : MonoBehaviour
                 timeInsideTrigger = 0f;
             }
         }
+
+        Debug.Log(gameObject.name);
     }
 
     void OnTriggerEnter(Collider other)
