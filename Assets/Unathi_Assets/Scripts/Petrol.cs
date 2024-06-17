@@ -10,6 +10,9 @@ public class Petrol : MonoBehaviour
     public float petrolAmount = 100f; // Initial amount of petrol in liters
     private float depletionRate; // Rate at which petrol depletes in liters per second
 
+    [SerializeField] Text petrolText;
+    [SerializeField] GameObject petrolTExt;
+
     void Start()
     {
         // Calculate the depletion rate per second
@@ -37,6 +40,16 @@ public class Petrol : MonoBehaviour
         petrolAmount = Mathf.Min(petrolAmount, maxPetrol);
 
         slider.value = petrolAmount;
+        Debug.Log(gameObject.name);
 
+        if (petrolAmount <= 0f)
+        {
+            petrolTExt.SetActive(true);
+            petrolText.text = "OUT OF PETROL!";
+        }
+        else
+        {
+            petrolTExt.SetActive(false);
+        }
     }
 }

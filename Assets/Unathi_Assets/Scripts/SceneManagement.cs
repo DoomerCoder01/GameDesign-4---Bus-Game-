@@ -9,6 +9,7 @@ public class SceneManagement : MonoBehaviour
 {
    [SerializeField] GameObject panel;
     [SerializeField] GameObject menuPanel;
+    [SerializeField] GameObject book;
 
     // Start is called before the first frame update
     void Start()
@@ -65,5 +66,15 @@ public class SceneManagement : MonoBehaviour
     {
         Time.timeScale = 1;
         menuPanel.SetActive(false);
+    }
+
+    public void ActivateBook()
+    {
+        book.SetActive(true);
+    }
+
+    public void DeactivateBook()
+    {
+        book.SetActive(false);
     }
 }
