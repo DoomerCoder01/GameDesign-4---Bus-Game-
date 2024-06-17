@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -56,11 +57,13 @@ public class SceneManagement : MonoBehaviour
 
     public void ActivateMenuPanel()
     {
+        Time.timeScale = 0;
         menuPanel.SetActive(true);
     }
 
     public void DeactivateMenuPanel()
     {
+        Time.timeScale = 1;
         menuPanel.SetActive(false);
     }
 }
