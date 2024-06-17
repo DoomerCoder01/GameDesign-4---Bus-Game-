@@ -40,7 +40,6 @@ public class Petrol : MonoBehaviour
         petrolAmount = Mathf.Min(petrolAmount, maxPetrol);
 
         slider.value = petrolAmount;
-        Debug.Log(gameObject.name);
 
         if (petrolAmount <= 0f)
         {

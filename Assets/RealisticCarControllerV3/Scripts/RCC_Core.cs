@@ -14,6 +14,14 @@ using UnityEngine.Audio;
 
 public class RCC_Core : MonoBehaviour {
 
+    public Petrol petrol;
+
+    void Start()
+    {
+        Debug.Log( gameObject.name);
+        petrol = GameObject.Find("UI").GetComponent<Petrol>();
+    }
+
     #region Create AudioSource
 
     /// <summary>

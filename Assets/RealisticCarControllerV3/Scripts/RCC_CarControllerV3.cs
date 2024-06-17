@@ -91,7 +91,7 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     #endregion
 
-    Petrol petrol;
+    
 
     public bool canControl = true;              // Enables / Disables controlling the vehicle. If enabled, vehicle can receive all inputs from the InputManager.
     public bool isGrounded = false;             // Is vehicle grounded completely now?
@@ -495,8 +495,6 @@ public class RCC_CarControllerV3 : RCC_Core {
     public RCC_TruckTrailer attachedTrailer;
 
     private void Awake() {
-
-        petrol = GameObject.Find("UI").GetComponent<Petrol>();
 
         // Setting max angular velocity of the rigid.
         Rigid.maxAngularVelocity = RCC_Settings.Instance.maxAngularVelocity;
