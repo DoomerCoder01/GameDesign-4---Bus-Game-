@@ -21,7 +21,7 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void UpdateText(string stringText)

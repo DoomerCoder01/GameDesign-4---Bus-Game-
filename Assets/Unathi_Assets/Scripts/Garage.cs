@@ -14,7 +14,7 @@ public class Garage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        countDown = 200; // Set initial countdown value
+        countDown = 100; // Set initial countdown value
         InvokeRepeating("DecrementCountdown", 1f, 1f); // Removed this line
     }
 
