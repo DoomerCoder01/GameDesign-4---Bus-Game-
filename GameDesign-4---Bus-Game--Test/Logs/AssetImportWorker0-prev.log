@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2022.3.7f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker0
 -projectPath
 C:/Github/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker0.log
 -srvPort
 55886
 Successfully changed project path to: C:/Github/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
@@ -49,11 +49,11 @@ C:/Github/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [23260] Host "[IP] 10.0.0.102 [Port] 0 [Flags] 2 [Guid] 4196715767 [EditorId] 4196715767 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10996] Host "[IP] 10.0.0.102 [Port] 0 [Flags] 2 [Guid] 2954648153 [EditorId] 2954648153 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [23260] Host "[IP] 10.0.0.102 [Port] 0 [Flags] 2 [Guid] 4196715767 [EditorId] 4196715767 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10996] Host "[IP] 10.0.0.102 [Port] 0 [Flags] 2 [Guid] 2954648153 [EditorId] 2954648153 [Version] 1048832 [Id] WindowsEditor(7,Unathi) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 36.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008495 seconds.
-- Loaded All Assemblies, in  0.570 seconds
+Registered in 0.009999 seconds.
+- Loaded All Assemblies, in  0.498 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.380 seconds
-Domain Reload Profiling: 949ms
-	BeginReloadAssembly (210ms)
+- Finished resetting the current domain, in  0.498 seconds
+Domain Reload Profiling: 994ms
+	BeginReloadAssembly (139ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (213ms)
-		LoadAssemblies (202ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (197ms)
+		LoadAssemblies (136ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (210ms)
-			TypeCache.Refresh (207ms)
-				TypeCache.ScanAssembly (182ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (172ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (381ms)
+	FinalizeReload (499ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (293ms)
+		SetupLoadedEditorAssemblies (412ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (193ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,58 +119,58 @@ Please note that FBX files exported from Cinema4D are still supported.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Github\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.691 seconds
-Refreshing native plugins compatible for Editor in 159.33 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.687 seconds
+Refreshing native plugins compatible for Editor in 162.01 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.573 seconds
-Domain Reload Profiling: 3258ms
-	BeginReloadAssembly (239ms)
+- Finished resetting the current domain, in  1.576 seconds
+Domain Reload Profiling: 3244ms
+	BeginReloadAssembly (226ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (62ms)
+	RebuildCommonClasses (52ms)
 	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (1300ms)
-		LoadAssemblies (912ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (1303ms)
+		LoadAssemblies (914ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (528ms)
-			TypeCache.Refresh (431ms)
-				TypeCache.ScanAssembly (371ms)
-			ScanForSourceGeneratedMonoScriptInfo (66ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1573ms)
+		AnalyzeDomain (524ms)
+			TypeCache.Refresh (429ms)
+				TypeCache.ScanAssembly (381ms)
+			ScanForSourceGeneratedMonoScriptInfo (70ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1577ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1246ms)
+		SetupLoadedEditorAssemblies (1218ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (44ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (320ms)
-			ProcessInitializeOnLoadAttributes (751ms)
-			ProcessInitializeOnLoadMethodAttributes (96ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (330ms)
+			ProcessInitializeOnLoadAttributes (743ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 7.47 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 8.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6086 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 94 unused Assets / (0.9 MB). Loaded Objects now: 6542.
 Memory consumption went from 223.7 MB to 222.9 MB.
-Total: 9.672000 ms (FindLiveObjects: 1.065200 ms CreateObjectMapping: 0.926700 ms MarkObjects: 6.353000 ms  DeleteObjects: 1.325400 ms)
+Total: 7.486000 ms (FindLiveObjects: 0.728600 ms CreateObjectMapping: 0.788300 ms MarkObjects: 5.083600 ms  DeleteObjects: 0.884100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,50 +186,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 596684.784339 seconds.
-  path: Assets/TerrainData_d78f9bf9-60a9-48a7-9708-237b7951ccc4.asset
-  artifactKey: Guid(0d4223350be961f4cae714bf9273b802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_d78f9bf9-60a9-48a7-9708-237b7951ccc4.asset using Guid(0d4223350be961f4cae714bf9273b802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7f03600701a3475ad24c6ab104cdbc') in 0.040447 seconds
+  Time since last request: 596684.785096 seconds.
+  path: Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset
+  artifactKey: Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset using Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b35daf0ddd4cd28fc810bdc79ec43e5') in 0.036291 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/TerrainData_e5eb8129-3aeb-4a65-a2f7-3521f34618a1.asset
-  artifactKey: Guid(433c4e4c296b1e44692bcc8534b4202b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_e5eb8129-3aeb-4a65-a2f7-3521f34618a1.asset using Guid(433c4e4c296b1e44692bcc8534b4202b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfec0b8aa6174ea009b52af2d864e9ff') in 0.011520 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TerrainData_7b66b77c-3f28-4905-81eb-8e2850a45d7d.asset
-  artifactKey: Guid(667d436544b772e47960e61fbae562fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_7b66b77c-3f28-4905-81eb-8e2850a45d7d.asset using Guid(667d436544b772e47960e61fbae562fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bde88687aa6c26c31909ae724b13705') in 0.007689 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/New Terrain 3.asset
-  artifactKey: Guid(23a64ffa0247b92498ad28f8cce6f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 3.asset using Guid(23a64ffa0247b92498ad28f8cce6f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a587e71d649b1cb2e70ccbd4db0a6eaa') in 0.011469 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TerrainData_e841ae6b-035a-4f8d-9382-9f37b70adb26.asset
-  artifactKey: Guid(2c7570e7a942321468bb0de72c3050e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_e841ae6b-035a-4f8d-9382-9f37b70adb26.asset using Guid(2c7570e7a942321468bb0de72c3050e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316832ac1ee8394cb0b5fb44a20a3726') in 0.009208 seconds
+  Time since last request: 0.000047 seconds.
+  path: Assets/TerrainData_1d9a5fcc-21a8-4c77-80b0-82066dd3e888.asset
+  artifactKey: Guid(e46ea5e863cbcef49aaecd0b9f356fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_1d9a5fcc-21a8-4c77-80b0-82066dd3e888.asset using Guid(e46ea5e863cbcef49aaecd0b9f356fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de957c79d095889af639b70bbadc1e4') in 0.011854 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/TerrainData_60796673-5290-4967-94ed-0e86c057e6ea.asset
-  artifactKey: Guid(b52d63f4364445548858c355ca7864fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_60796673-5290-4967-94ed-0e86c057e6ea.asset using Guid(b52d63f4364445548858c355ca7864fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dcbbc362a58edb62678f542048cadc2') in 0.009541 seconds
+  path: Assets/TerrainData_e3474713-f276-4da3-883c-ab49337ef8d1.asset
+  artifactKey: Guid(42db4e77fd004eb47aaf4f1b73ce246c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_e3474713-f276-4da3-883c-ab49337ef8d1.asset using Guid(42db4e77fd004eb47aaf4f1b73ce246c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd5ccc48e879a483bf57fd24181f242') in 0.010327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TerrainData_3bc12ade-60a8-4c6c-82ae-d9abb19cb95f.asset
+  artifactKey: Guid(b4a307beed4e4ae41ad1634ed5f01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_3bc12ade-60a8-4c6c-82ae-d9abb19cb95f.asset using Guid(b4a307beed4e4ae41ad1634ed5f01582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca719e9adc1977127923ec99823e9177') in 0.010700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TerrainData_fb141b95-bddb-49e2-adf1-c5ef1bd807fc.asset
+  artifactKey: Guid(7def02ebca5a4434bbc371262d62a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_fb141b95-bddb-49e2-adf1-c5ef1bd807fc.asset using Guid(7def02ebca5a4434bbc371262d62a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51656b3de5346df6c73a0979e535c9') in 0.008198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TerrainData_9c4a0d50-1a3d-4520-b6d4-1e1155f35d1d.asset
+  artifactKey: Guid(354bde708fde00e4fa8ce7ffe7963884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9c4a0d50-1a3d-4520-b6d4-1e1155f35d1d.asset using Guid(354bde708fde00e4fa8ce7ffe7963884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd61cf7e3b49ff081e9141a395749de6') in 0.011195 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
@@ -237,12 +237,12 @@ Received Prepare
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 22.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 22.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 10 unused Assets / (1.2 MB). Loaded Objects now: 6544.
 Memory consumption went from 103.4 MB to 102.2 MB.
-Total: 6.644700 ms (FindLiveObjects: 1.169500 ms CreateObjectMapping: 0.567000 ms MarkObjects: 4.221300 ms  DeleteObjects: 0.683800 ms)
+Total: 7.251800 ms (FindLiveObjects: 0.918200 ms CreateObjectMapping: 0.604400 ms MarkObjects: 5.165300 ms  DeleteObjects: 0.562600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -259,24 +259,16 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 931.046972 seconds.
-  path: Assets/Scenes/Main Menu.unity
-  artifactKey: Guid(a6b16d1b99aa52e4ba0664ad6cbf9ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Menu.unity using Guid(a6b16d1b99aa52e4ba0664ad6cbf9ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453ff728ddadc8c52c6a27a922503b36') in 0.007435 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
 Received Prepare
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 6.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 8 unused Assets / (0.8 MB). Loaded Objects now: 6544.
 Memory consumption went from 103.0 MB to 102.1 MB.
-Total: 8.443600 ms (FindLiveObjects: 1.075900 ms CreateObjectMapping: 0.983700 ms MarkObjects: 5.670600 ms  DeleteObjects: 0.712200 ms)
+Total: 7.627900 ms (FindLiveObjects: 0.811000 ms CreateObjectMapping: 0.701100 ms MarkObjects: 5.269500 ms  DeleteObjects: 0.844900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -298,12 +290,12 @@ Received Prepare
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
-Refreshing native plugins compatible for Editor in 6.93 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 8 unused Assets / (0.8 MB). Loaded Objects now: 6544.
 Memory consumption went from 103.0 MB to 102.1 MB.
-Total: 9.312900 ms (FindLiveObjects: 0.763300 ms CreateObjectMapping: 0.779000 ms MarkObjects: 7.085000 ms  DeleteObjects: 0.683900 ms)
+Total: 13.119400 ms (FindLiveObjects: 1.256200 ms CreateObjectMapping: 0.946300 ms MarkObjects: 9.946400 ms  DeleteObjects: 0.967600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
