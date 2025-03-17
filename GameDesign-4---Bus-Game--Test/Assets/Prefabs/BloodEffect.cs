@@ -6,11 +6,19 @@ public class BloodEffect : MonoBehaviour
 {
     public ParticleSystem bloodEffectPrefab; // Assign your blood effect prefab in the inspector
 
+    AudioSource splatSound;
+
+    void Start()
+    {
+        splatSound = GameObject.Find("Splat Sound").GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the NPC has collided with an object tagged "Bus"
         if (collision.gameObject.CompareTag("Bus"))
         {
+            splatSound.Play();
             // Instantiate the blood effect at the NPC's position and rotation
             ParticleSystem bloodEffectInstance = Instantiate(bloodEffectPrefab, transform.position, Quaternion.identity);
 
