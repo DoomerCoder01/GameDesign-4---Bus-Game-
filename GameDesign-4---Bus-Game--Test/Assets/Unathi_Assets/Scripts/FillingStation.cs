@@ -10,12 +10,12 @@ public class FillingStation : MonoBehaviour
 
     [SerializeField] bool canTrigger;
 
-    Shop shop;
+    [SerializeField] Shop shop;
 
     // Start is called before the first frame update
     void Start()
     {
-        shop = GameObject.FindGameObjectWithTag("Bus").GetComponent<Shop>();
+        
     }
 
     // Update is called once per frame

@@ -930,7 +930,6 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     private void Update() {
 
-        if(petrol.petrolAmount > 0)
         Inputs();
         Audio();
         CheckReset();
@@ -1086,7 +1085,10 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     private void Inputs() {
 
-        if (canControl) {
+        if (petrol.petrolAmount <= 0)
+            return;
+
+            if (canControl) {
 
             if (!externalController) {
 

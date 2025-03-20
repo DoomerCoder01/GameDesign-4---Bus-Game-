@@ -7,7 +7,7 @@ public class Level2Manager : MonoBehaviour
 {
     public int passengerCount;
 
-    public Text lvl2UnlockText;
+    public Text lvl3UnlockText;
 
     SceneManagement sceneManagement;
 
@@ -20,11 +20,20 @@ public class Level2Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            lvl2UnlockText.text = "Level 2";
+        if (passengerCount < 5)
+        {
+            lvl3UnlockText.text = "Unlock Level 3 (" + passengerCount + "/5)";
+        }
+        else
+        {
+            lvl3UnlockText.text = "Level 3";
+
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
+        if (passengerCount >= 5)
             sceneManagement.ActivatePanel();
     }
 
