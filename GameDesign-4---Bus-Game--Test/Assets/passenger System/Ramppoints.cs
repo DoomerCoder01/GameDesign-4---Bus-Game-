@@ -9,7 +9,7 @@ public class RampPoints : MonoBehaviour
 
     public Text scoreText; // Reference to your Text object
 
-    private void Start()
+    private void Update()
     {
         scoreText = GameObject.Find("Staunt").GetComponent<Text>();
     }

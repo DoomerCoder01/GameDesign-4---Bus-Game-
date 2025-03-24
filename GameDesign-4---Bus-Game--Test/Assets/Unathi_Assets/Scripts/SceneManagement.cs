@@ -29,13 +29,14 @@ public class SceneManagement : MonoBehaviour
     }
     public void LoadSecondLevel()
     {
-        Debug.Log("Unathi");
-        // Start loading "Level 2" and "Anele_Level 2" asynchronously
-        AsyncOperation asyncLoadLevel2 = SceneManager.LoadSceneAsync("Level 2", LoadSceneMode.Additive);
-        AsyncOperation asyncLoadAneleLevel2 = SceneManager.LoadSceneAsync("Anele_Level 2", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Level 2");
+        //Debug.Log("Unathi");
+        //// Start loading "Level 2" and "Anele_Level 2" asynchronously
+        //AsyncOperation asyncLoadLevel2 = SceneManager.LoadSceneAsync("Level 2", LoadSceneMode.Additive);
+        //AsyncOperation asyncLoadAneleLevel2 = SceneManager.LoadSceneAsync("Anele_Level 2", LoadSceneMode.Additive);
 
-        // Wait until both scenes are loaded before unloading "Level 1"
-        StartCoroutine(WaitForSceneLoad(asyncLoadLevel2, asyncLoadAneleLevel2));
+        //// Wait until both scenes are loaded before unloading "Level 1"
+        //StartCoroutine(WaitForSceneLoad(asyncLoadLevel2, asyncLoadAneleLevel2));
     }
 
     private IEnumerator WaitForSceneLoad(AsyncOperation asyncLoadLevel2, AsyncOperation asyncLoadAneleLevel2)

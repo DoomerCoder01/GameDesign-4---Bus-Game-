@@ -22,8 +22,6 @@ public class Petrol : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(gameObject.name);
-
         // Decrease the petrolAmount based on depletion rate and time
         petrolAmount -= depletionRate * Time.deltaTime;
 

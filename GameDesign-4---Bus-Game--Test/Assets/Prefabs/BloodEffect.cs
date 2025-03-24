@@ -8,7 +8,7 @@ public class BloodEffect : MonoBehaviour
 
     AudioSource splatSound;
 
-    void Start()
+    void Update()
     {
         splatSound = GameObject.Find("Splat Sound").GetComponent<AudioSource>();
     }

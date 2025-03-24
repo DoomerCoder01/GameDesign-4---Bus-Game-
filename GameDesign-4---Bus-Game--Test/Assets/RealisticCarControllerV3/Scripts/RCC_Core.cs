@@ -20,6 +20,10 @@ public class RCC_Core : MonoBehaviour {
     {
         Debug.Log( gameObject.name);
         petrol = GameObject.Find("UI").GetComponent<Petrol>();
+        if (petrol == null) 
+        {
+            Debug.Log("Petrol Is Null!");
+        }
     }
 
     #region Create AudioSource

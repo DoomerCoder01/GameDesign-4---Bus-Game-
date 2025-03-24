@@ -91,7 +91,7 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     #endregion
 
-    
+
 
     public bool canControl = true;              // Enables / Disables controlling the vehicle. If enabled, vehicle can receive all inputs from the InputManager.
     public bool isGrounded = false;             // Is vehicle grounded completely now?
@@ -1083,101 +1083,102 @@ public class RCC_CarControllerV3 : RCC_Core {
 
     }
 
-    private void Inputs() {
+    private void Inputs()
+    {
 
-        if (petrol.petrolAmount <= 0)
-            return;
+        if (petrol.petrolAmount > 0) 
+        { 
 
             if (canControl) {
 
-            if (!externalController) {
+                if (!externalController) {
 
-                if (!overrideInputs)
-                    inputs = RCC_InputManager.Instance.inputs;
+                    if (!overrideInputs)
+                        inputs = RCC_InputManager.Instance.inputs;
 
-                if (!AutomaticGear || semiAutomaticGear) {
-                    if (!changingGear && !cutGas)
-                        throttleInput = inputs.throttleInput;
-                    else
-                        throttleInput = 0f;
-                } else {
-                    if (!changingGear && !cutGas)
-                        throttleInput = (direction == 1 ? Mathf.Clamp01(inputs.throttleInput) : Mathf.Clamp01(inputs.brakeInput));
-                    else
-                        throttleInput = 0f;
-                }
+                    if (!AutomaticGear || semiAutomaticGear) {
+                        if (!changingGear && !cutGas)
+                            throttleInput = inputs.throttleInput;
+                        else
+                            throttleInput = 0f;
+                    } else {
+                        if (!changingGear && !cutGas)
+                            throttleInput = (direction == 1 ? Mathf.Clamp01(inputs.throttleInput) : Mathf.Clamp01(inputs.brakeInput));
+                        else
+                            throttleInput = 0f;
+                    }
 
-                if (!AutomaticGear || semiAutomaticGear) {
-                    brakeInput = Mathf.Clamp01(inputs.brakeInput);
-                } else {
-                    if (!cutGas)
-                        brakeInput = (direction == 1 ? Mathf.Clamp01(inputs.brakeInput) : Mathf.Clamp01(inputs.throttleInput));
-                    else
-                        brakeInput = 0f;
-                }
+                    if (!AutomaticGear || semiAutomaticGear) {
+                        brakeInput = Mathf.Clamp01(inputs.brakeInput);
+                    } else {
+                        if (!cutGas)
+                            brakeInput = (direction == 1 ? Mathf.Clamp01(inputs.brakeInput) : Mathf.Clamp01(inputs.throttleInput));
+                        else
+                            brakeInput = 0f;
+                    }
 
-                if (useSteeringSensitivity) {
+                    if (useSteeringSensitivity) {
 
-                    bool oppositeDirection = Mathf.Sign(inputs.steerInput) != Mathf.Sign(steerInput) ? true : false;
-                    steerInput = Mathf.MoveTowards(steerInput, inputs.steerInput + counterSteerInput, (Time.deltaTime * steeringSensitivityFactor * Mathf.Lerp(10f, 5f, steerAngle / orgSteerAngle)) * (oppositeDirection ? 1f : 1f));
-
-                } else {
-                    steerInput = inputs.steerInput + counterSteerInput;
-                }
-
-                SteeringAssistance();
-
-                boostInput = inputs.boostInput;
-                handbrakeInput = inputs.handbrakeInput;
-
-                if (RCC_InputManager.Instance.logitechHShifterUsed) {
-
-                    currentGear = inputs.gearInput;
-
-                    if (currentGear == -1) {
-
-                        currentGear = 0;
-                        direction = -1;
+                        bool oppositeDirection = Mathf.Sign(inputs.steerInput) != Mathf.Sign(steerInput) ? true : false;
+                        steerInput = Mathf.MoveTowards(steerInput, inputs.steerInput + counterSteerInput, (Time.deltaTime * steeringSensitivityFactor * Mathf.Lerp(10f, 5f, steerAngle / orgSteerAngle)) * (oppositeDirection ? 1f : 1f));
 
                     } else {
+                        steerInput = inputs.steerInput + counterSteerInput;
+                    }
 
-                        direction = 1;
+                    SteeringAssistance();
+
+                    boostInput = inputs.boostInput;
+                    handbrakeInput = inputs.handbrakeInput;
+
+                    if (RCC_InputManager.Instance.logitechHShifterUsed) {
+
+                        currentGear = inputs.gearInput;
+
+                        if (currentGear == -1) {
+
+                            currentGear = 0;
+                            direction = -1;
+
+                        } else {
+
+                            direction = 1;
+
+                        }
+
+                        if (currentGear == -2) {
+
+                            currentGear = 0;
+                            NGear = true;
+
+                        } else {
+
+                            NGear = false;
+
+                        }
 
                     }
 
-                    if (currentGear == -2) {
+                    if (!UseAutomaticClutch) {
 
-                        currentGear = 0;
-                        NGear = true;
-
-                    } else {
-
-                        NGear = false;
+                        if (!NGear)
+                            clutchInput = inputs.clutchInput;
+                        else
+                            clutchInput = 1f;
 
                     }
 
                 }
 
-                if (!UseAutomaticClutch) {
+            } else if (!externalController) {
 
-                    if (!NGear)
-                        clutchInput = inputs.clutchInput;
-                    else
-                        clutchInput = 1f;
-
-                }
+                throttleInput = 0f;
+                brakeInput = 0f;
+                steerInput = 0f;
+                boostInput = 0f;
+                handbrakeInput = 1f;
 
             }
-
-        } else if (!externalController) {
-
-            throttleInput = 0f;
-            brakeInput = 0f;
-            steerInput = 0f;
-            boostInput = 0f;
-            handbrakeInput = 1f;
-
-        }
 
         if (fuelInput <= 0f) {
 
@@ -1231,6 +1232,7 @@ public class RCC_CarControllerV3 : RCC_Core {
 
         }
 
+    } 
     }
 
     private void SteeringAssistance() {
