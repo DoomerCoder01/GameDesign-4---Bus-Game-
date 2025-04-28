@@ -336,3 +336,5 @@ Received Import Request.
 Start importing Assets/Unathi_Assets/Scripts/Passengers_Forest/PassengersForest.cs using Guid(2c2ca1da75d759040a95e51dfa54dac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64804214a6ca4d30317c3f7d8bf02552') in 0.006612 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
