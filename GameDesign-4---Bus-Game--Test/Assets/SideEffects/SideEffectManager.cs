@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class SideEffectManager : MonoBehaviour
 {
-  public static SideEffectManager Instance;
-  private float sleepySteeringOffset = 0f;
+    public static SideEffectManager Instance;
+    private float sleepySteeringOffset = 0f;
 
     private void Awake()
     {
@@ -20,7 +20,8 @@ public class SideEffectManager : MonoBehaviour
         SleepySteering,
         BouncyBrakes,
         ReverseControls,
-        FuelDrain
+        FuelDrain,
+        SnailMode,
         // Removed PassengerPanic and other passenger effects
     }
 
@@ -59,6 +60,11 @@ public class SideEffectManager : MonoBehaviour
                 if (petrol != null)
                     petrol.ReduceFuelByPercentage(40f);
                 break;
+
+            case SideEffect.SnailMode:
+                Debug.Log("Activating Snail Mode!");
+                StartCoroutine(SnailMode(car, 30f));
+                break;
         }
     }
 
@@ -72,49 +78,49 @@ public class SideEffectManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         car.maxspeed = originalMaxSpeed;
-        
-        
-    Debug.Log("TurboBoost effect started.");
+
+
+        Debug.Log("TurboBoost effect started.");
     }
 
     IEnumerator SleepySteering(RCC_CarControllerV3 car, float duration)
     {
         if (car == null) yield break;
 
-        
-    Debug.Log("SleepySteering effect started.");
 
-    float timer = 0f;
-    while (timer < duration)
-    {
-        sleepySteeringOffset = Mathf.Sin(Time.time * 3f) * 0.3f; // Bigger offset if you want
-        car.steerInput = Mathf.Clamp(car.steerInput + sleepySteeringOffset, -1f, 1f);
+        Debug.Log("SleepySteering effect started.");
 
-        timer += Time.deltaTime;
-        yield return null;
-    }
+        float timer = 0f;
+        while (timer < duration)
+        {
+            sleepySteeringOffset = Mathf.Sin(Time.time * 3f) * 0.3f; // Bigger offset if you want
+            car.steerInput = Mathf.Clamp(car.steerInput + sleepySteeringOffset, -1f, 1f);
 
-    sleepySteeringOffset = 0f;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        sleepySteeringOffset = 0f;
 
     }
 
     IEnumerator BouncyBrakes(RCC_CarControllerV3 car, float duration)
     {
         if (car == null)
-        
-    {
-        Debug.LogWarning("Car reference is null!");
-        yield break;
-    }
 
-    Rigidbody rb = car.GetComponent<Rigidbody>();
-    if (rb == null)
-    {
-        Debug.LogWarning("No Rigidbody found on car!");
-        yield break;
-    }
+        {
+            Debug.LogWarning("Car reference is null!");
+            yield break;
+        }
 
-    float timer = 0f;
+        Rigidbody rb = car.GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            Debug.LogWarning("No Rigidbody found on car!");
+            yield break;
+        }
+
+        float timer = 0f;
 
         while (timer < duration)
         {
@@ -129,9 +135,9 @@ public class SideEffectManager : MonoBehaviour
 
             timer += Time.deltaTime;
             yield return null;
-        
-    Debug.Log("BouncyBrakes effect started.");
-    }
+
+            Debug.Log("BouncyBrakes effect started.");
+        }
 
     }
 
@@ -139,23 +145,58 @@ public class SideEffectManager : MonoBehaviour
     {
         if (car == null) yield break;
 
-    float timer = 0f;
-    Debug.Log("ReverseControls effect started.");
+        float timer = 0f;
+        Debug.Log("ReverseControls effect started.");
 
+        while (timer < duration)
+        {
+            // Assuming car.steerInput is overwritten by player input every frame,
+            // forcibly invert it after that happens:
+
+            float currentInput = car.steerInput; // get current input
+            car.steerInput = -currentInput;      // invert it
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        Debug.Log("ReverseControls effect ended.");
+
+    }
+    
+    IEnumerator SnailMode(RCC_CarControllerV3 car, float duration)
+{
+    if (car == null) yield break;
+
+    Debug.Log("Snail Mode started.");
+
+    // Save original max speed
+    float originalMaxSpeed = car.maxspeed;
+
+    // Reduce to snail speed (e.g., 20 units)
+    car.maxspeed = 20f;
+
+    float timer = 0f;
     while (timer < duration)
     {
-        // Assuming car.steerInput is overwritten by player input every frame,
-        // forcibly invert it after that happens:
-
-        float currentInput = car.steerInput; // get current input
-        car.steerInput = -currentInput;      // invert it
+        // Optional: If you want to further slow acceleration, clamp velocity
+        if (car.GetComponent<Rigidbody>() != null)
+        {
+            Rigidbody rb = car.GetComponent<Rigidbody>();
+            if (rb.velocity.magnitude > 5f) // equivalent of ~18km/h
+            {
+                rb.velocity = rb.velocity.normalized * 5f;
+            }
+        }
 
         timer += Time.deltaTime;
         yield return null;
     }
 
-    Debug.Log("ReverseControls effect ended.");
+    // Restore max speed
+    car.maxspeed = originalMaxSpeed;
+    Debug.Log("Snail Mode ended.");
+}
 
-    }
 
 }
