@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Petrol : MonoBehaviour
 {
     public Slider slider;
-    public float maxPetrol = 100;
+    public float maxPetrol = 100f;
     public float petrolAmount = 100f; // Initial amount of petrol in liters
     private float depletionRate; // Rate at which petrol depletes in liters per second
 
@@ -51,4 +51,19 @@ public class Petrol : MonoBehaviour
             petrolTExt.SetActive(false);
         }
     }
+
+    public void ReduceFuelByPercentage(float percent)
+    {
+        float amountToDrain = maxPetrol * (percent / 100f);
+        petrolAmount = Mathf.Max(0f, petrolAmount - amountToDrain);
+        slider.value = petrolAmount; // Ensure UI updates immediately
+        Debug.Log("Fuel reduced by {percent}% (-{amountToDrain}L). New level: {petrolAmount}L");
+
+        if (petrolAmount <= 0f)
+        {
+            petrolTExt.SetActive(true);
+            petrolText.text = "OUT OF PETROL!";
+        }
+    }
+
 }
