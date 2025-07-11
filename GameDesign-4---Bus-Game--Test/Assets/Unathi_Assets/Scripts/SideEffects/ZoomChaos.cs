@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ZoomChaos : MonoBehaviour
 {
+    public Animator anim;
+
+    public bool zoomChaos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +17,6 @@ public class ZoomChaos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+          anim.SetBool("camEffect",  zoomChaos);
     }
 }

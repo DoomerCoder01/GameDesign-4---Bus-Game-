@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petrol: {fileID: 2077027883}
   carHorn: {fileID: 591490071}
-  zoomChaos: {fileID: 0}
+  zoomChaos: {fileID: 1625417058}
 --- !u!4 &558244537
 Transform:
   m_ObjectHideFlags: 0
@@ -1921,7 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 1952873138}
   spawnPoint: {fileID: 113792272}
-  spawnInterval: 20
+  spawnInterval: 40
   heightAboveGround: 0.5
 --- !u!1001 &572467633
 PrefabInstance:
@@ -2216,7 +2216,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.306076e-39, y: -1.469368e-39, z: 0, w: -1.7152322e-35}
+  m_BoundingSphereOverride: {x: 0, y: 6e-44, z: 6e-45, w: 2.2156e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2702,6 +2702,7 @@ MonoBehaviour:
   maxPetrol: 100
   petrolAmount: 100
   isFuelBlocked: 0
+  isMoving: 0
   petrolText: {fileID: 993465477}
   petrolTExt: {fileID: 993465475}
 --- !u!4 &933072041
@@ -3419,6 +3420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1131761555}
+  - component: {fileID: 1131761556}
   m_Layer: 0
   m_Name: CameraParent
   m_TagString: Untagged
@@ -3443,6 +3445,27 @@ Transform:
   - {fileID: 737710097}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1131761556
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131761554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 64a22ca5d19b54a49803bcd66afcfff0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1135977989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,6 +4740,52 @@ Transform:
   - {fileID: 1966184923}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &1625417057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625417059}
+  - component: {fileID: 1625417058}
+  m_Layer: 0
+  m_Name: ZoomChaos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1625417058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625417057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cc6c0d87cbbca468fffee741d60643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1131761556}
+  zoomChaos: 0
+--- !u!4 &1625417059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625417057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10.549999, z: -30.150002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626652564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6577,6 +6646,7 @@ MonoBehaviour:
   maxPetrol: 100
   petrolAmount: 100
   isFuelBlocked: 0
+  isMoving: 0
   petrolText: {fileID: 1125496404}
   petrolTExt: {fileID: 993465475}
 --- !u!1 &2119913010
@@ -6765,3 +6835,4 @@ SceneRoots:
   - {fileID: 1564503622}
   - {fileID: 558244537}
   - {fileID: 541853975}
+  - {fileID: 1625417059}

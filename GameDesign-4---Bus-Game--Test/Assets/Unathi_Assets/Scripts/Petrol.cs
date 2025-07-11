@@ -10,6 +10,7 @@ public class Petrol : MonoBehaviour
     public float petrolAmount = 100f; // Initial amount of petrol in liters
     private float depletionRate; // Rate at which petrol depletes in liters per second
     public bool isFuelBlocked = false;
+    public bool isMoving;
 
 
     [SerializeField] Text petrolText;
@@ -24,25 +25,19 @@ public class Petrol : MonoBehaviour
 
     void Update()
     {
-        if (!isFuelBlocked)
+        // Check if any movement key is being held
+        isMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) ||
+                   Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
+
+        if (!isFuelBlocked && isMoving)
         {
             petrolAmount -= depletionRate * Time.deltaTime;
         }
 
-        // Ensure petrolAmount doesn't go below 0
-        petrolAmount = Mathf.Max(petrolAmount, 0f);
+        // Clamp petrolAmount between 0 and maxPetrol
+        petrolAmount = Mathf.Clamp(petrolAmount, 0f, maxPetrol);
 
-        // Check if petrol has run out
-        if (petrolAmount <= 0f)
-        {
-            // Petrol has run out, perform any necessary actions (e.g., stop a car)
-            Debug.Log("Out of petrol!");
-            // You can add more actions here, like stopping the engine, etc.
-        }
-
-        // Cap petrolAmount at maxPetrol
-        petrolAmount = Mathf.Min(petrolAmount, maxPetrol);
-
+        // Update slider UI
         slider.value = petrolAmount;
 
         if (petrolAmount <= 0f)

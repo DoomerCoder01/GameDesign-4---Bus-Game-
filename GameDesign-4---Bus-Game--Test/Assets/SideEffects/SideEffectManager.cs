@@ -31,7 +31,7 @@ public class SideEffectManager : MonoBehaviour
         FlatTire,
         FuelBlock,
         FunnyHorn,
-        ZoomChaos
+        ZoomChaos,
         // Removed PassengerPanic and other passenger effects
     }
 
@@ -88,6 +88,10 @@ public class SideEffectManager : MonoBehaviour
             case SideEffect.FunnyHorn:
                 Debug.Log("FunnyHorn is on!");
                 StartCoroutine(CarHornEffect());
+                break;
+            case SideEffect.ZoomChaos:
+                Debug.Log("ZoomChaos is on!");
+                StartCoroutine(ZoomChaosEffect());
                 break;
         }
     }
@@ -294,13 +298,13 @@ IEnumerator FuelBlockEffect()
 
         Debug.Log("Experiencing Zoom Chaos.");
 
-        //carHorn.sideEffectOn = true;
+        zoomChaos.zoomChaos = true;
 
-        //yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(20f);
 
-        //carHorn.sideEffectOn = false;
+        zoomChaos.zoomChaos = false;
 
-        //Debug.Log("Funny Horn stopped.");
+        Debug.Log("No more Zoom Chaos!");
     }
 
 }
