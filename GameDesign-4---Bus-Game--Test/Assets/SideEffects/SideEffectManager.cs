@@ -32,6 +32,9 @@ public class SideEffectManager : MonoBehaviour
         FuelBlock,
         FunnyHorn,
         ZoomChaos,
+        GhostBus,
+        PassengerPanic,
+        CloneMirage,
         // Removed PassengerPanic and other passenger effects
     }
 
@@ -93,8 +96,38 @@ public class SideEffectManager : MonoBehaviour
                 Debug.Log("ZoomChaos is on!");
                 StartCoroutine(ZoomChaosEffect());
                 break;
+
+            case SideEffect.GhostBus:
+                Debug.Log("Ghost Bus activated!");
+                StartCoroutine(GhostBus(car.transform, 20f));
+                break;
+
+            case SideEffect.PassengerPanic:
+                Debug.Log("Passenger Panic activated!");
+                TriggerPassengerPanic();
+                break;
+
+            case SideEffect.CloneMirage:
+                Debug.Log("Clone Mirage activated!");
+                StartCoroutine(SpawnCloneMirage(car.transform, 15f));
+                break;
         }
     }
+
+    void TriggerPassengerPanic()
+    {
+        if (PassengerController.passengerCount > 0)
+        {
+            PassengerController.ResetPassengerCount();
+            Debug.Log("Passenger Panic! All passengers have been removed.");
+        }
+        else
+        {
+            Debug.Log("Passenger Panic triggered, but there were no passengers onboard.");
+        }
+    }
+
+
 
     IEnumerator TurboBoost(RCC_CarControllerV3 car, float duration, float multiplier = 2f)
     {
@@ -226,56 +259,56 @@ public class SideEffectManager : MonoBehaviour
         Debug.Log("Snail Mode ended.");
     }
 
-IEnumerator FlatTire(RCC_CarControllerV3 car, float duration)
-{
-    if (car == null) yield break;
-
-    Debug.Log("Flat Tire effect started.");
-
-    float timer = 0f;
-
-    // Randomly decide which side to pull (left = -1, right = +1)
-    int direction = Random.value > 0.5f ? 1 : -1;
-
-    // Lean angle (in degrees) to tilt the bus visually
-    float leanAngle = 10f * direction;
-
-    // Cache the original rotation
-    Quaternion originalRotation = car.transform.rotation;
-
-    while (timer < duration)
+    IEnumerator FlatTire(RCC_CarControllerV3 car, float duration)
     {
-        // Add slight unwanted steering
-        car.steerInput += 0.2f * direction;
+        if (car == null) yield break;
 
-        // Lean the bus visually
-        Quaternion leanRotation = originalRotation * Quaternion.Euler(0, 0, leanAngle);
-        car.transform.rotation = Quaternion.Lerp(car.transform.rotation, leanRotation, Time.deltaTime * 2f);
+        Debug.Log("Flat Tire effect started.");
 
-        timer += Time.deltaTime;
-        yield return null;
+        float timer = 0f;
+
+        // Randomly decide which side to pull (left = -1, right = +1)
+        int direction = Random.value > 0.5f ? 1 : -1;
+
+        // Lean angle (in degrees) to tilt the bus visually
+        float leanAngle = 10f * direction;
+
+        // Cache the original rotation
+        Quaternion originalRotation = car.transform.rotation;
+
+        while (timer < duration)
+        {
+            // Add slight unwanted steering
+            car.steerInput += 0.2f * direction;
+
+            // Lean the bus visually
+            Quaternion leanRotation = originalRotation * Quaternion.Euler(0, 0, leanAngle);
+            car.transform.rotation = Quaternion.Lerp(car.transform.rotation, leanRotation, Time.deltaTime * 2f);
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reset rotation (optional: you can smoothly lerp back if needed)
+        car.transform.rotation = originalRotation;
+
+        Debug.Log("Flat Tire effect ended.");
     }
 
-    // Reset rotation (optional: you can smoothly lerp back if needed)
-    car.transform.rotation = originalRotation;
+    IEnumerator FuelBlockEffect()
+    {
+        if (petrol == null) yield break;
 
-    Debug.Log("Flat Tire effect ended.");
-}
+        Debug.Log("Fuel Block started. Fuel is frozen.");
 
-IEnumerator FuelBlockEffect()
-{
-    if (petrol == null) yield break;
+        petrol.isFuelBlocked = true;
 
-    Debug.Log("Fuel Block started. Fuel is frozen.");
+        yield return new WaitForSeconds(20f);
 
-    petrol.isFuelBlocked = true;
+        petrol.isFuelBlocked = false;
 
-    yield return new WaitForSeconds(20f);
-
-    petrol.isFuelBlocked = false;
-
-    Debug.Log("Fuel Block ended. Fuel is now depleting again.");
-}
+        Debug.Log("Fuel Block ended. Fuel is now depleting again.");
+    }
 
     IEnumerator CarHornEffect()
     {
@@ -306,5 +339,107 @@ IEnumerator FuelBlockEffect()
 
         Debug.Log("No more Zoom Chaos!");
     }
+
+    IEnumerator GhostBus(Transform busTransform, float duration)
+    {
+        Debug.Log("Ghost Bus effect started.");
+
+        Renderer[] renderers = busTransform.GetComponentsInChildren<Renderer>();
+        List<Material[]> originalMaterials = new List<Material[]>();
+
+        // Store original materials and apply transparent shader
+        foreach (Renderer rend in renderers)
+        {
+            originalMaterials.Add(rend.materials);
+
+            foreach (Material mat in rend.materials)
+            {
+                mat.SetFloat("_Mode", 2); // Fade mode
+                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+                mat.SetInt("_ZWrite", 0);
+                mat.DisableKeyword("_ALPHATEST_ON");
+                mat.EnableKeyword("_ALPHABLEND_ON");
+                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+                mat.renderQueue = 3000;
+
+                Color color = mat.color;
+                color.a = 0.3f; // Transparency
+                mat.color = color;
+            }
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        // Restore original opacity
+        foreach (Renderer rend in renderers)
+        {
+            foreach (Material mat in rend.materials)
+            {
+                Color color = mat.color;
+                color.a = 1f;
+                mat.color = color;
+
+                // Optional: Reset shader if needed
+            }
+        }
+
+        Debug.Log("Ghost Bus effect ended.");
+    }
+
+    IEnumerator SpawnCloneMirage(Transform playerBus, float duration)
+{
+    Debug.Log("Spawning clone mirage.");
+
+    // Instantiate a clone
+    GameObject clone = Instantiate(playerBus.gameObject);
+
+    // Position slightly to the right of the real bus
+    clone.transform.position = playerBus.position + playerBus.right * 3f;
+
+    // Remove clone behaviors that affect gameplay
+    foreach (var cc in clone.GetComponents<RCC_CarControllerV3>())
+        Destroy(cc);
+
+    // Make clone transparent
+    Renderer[] renderers = clone.GetComponentsInChildren<Renderer>();
+    foreach (Renderer rend in renderers)
+    {
+        foreach (Material mat in rend.materials)
+        {
+            mat.SetFloat("_Mode", 2); // Fade mode
+            mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+            mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            mat.SetInt("_ZWrite", 0);
+            mat.DisableKeyword("_ALPHATEST_ON");
+            mat.EnableKeyword("_ALPHABLEND_ON");
+            mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+            mat.renderQueue = 3000;
+
+            Color color = mat.color;
+            color.a = 0.4f; // Transparent ghost clone
+            mat.color = color;
+        }
+    }
+
+    // Optional: Make the clone follow loosely
+    float timer = 0f;
+    Vector3 offset = clone.transform.position - playerBus.position;
+
+    while (timer < duration && clone != null)
+    {
+        clone.transform.position = Vector3.Lerp(clone.transform.position, playerBus.position + offset, Time.deltaTime * 5f);
+        clone.transform.rotation = Quaternion.Lerp(clone.transform.rotation, playerBus.rotation, Time.deltaTime * 5f);
+        timer += Time.deltaTime;
+        yield return null;
+    }
+
+    if (clone != null)
+        Destroy(clone);
+
+    Debug.Log("Clone Mirage ended.");
+}
+
+
 
 }
