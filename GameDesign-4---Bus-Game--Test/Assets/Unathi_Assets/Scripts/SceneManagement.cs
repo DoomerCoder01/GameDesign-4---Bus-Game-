@@ -27,6 +27,12 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
+
+    public void LoadFourthLevel()
+    {
+        SceneManager.LoadScene("Level 4");
+    }
+
     public void LoadSecondLevel()
     {
         SceneManager.LoadScene("Level 2");

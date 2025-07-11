@@ -34,7 +34,7 @@ public class SideEffectManager : MonoBehaviour
 
     public void ApplyRandomSideEffect(GameObject player)
     {
-        SideEffect effect = (SideEffect)Random.Range(0, System.Enum.GetValues(typeof(SideEffect)).Length);
+        SideEffect effect = SideEffect.FunnyHorn; //(SideEffect)Random.Range(0, System.Enum.GetValues(typeof(SideEffect)).Length);
         ApplyEffect(effect, player);
     }
 
