@@ -12,6 +12,8 @@ public class SideEffectManager : MonoBehaviour
 
     public CarHorn carHorn;
 
+    public ZoomChaos zoomChaos;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -29,12 +31,13 @@ public class SideEffectManager : MonoBehaviour
         FlatTire,
         FuelBlock,
         FunnyHorn,
+        ZoomChaos
         // Removed PassengerPanic and other passenger effects
     }
 
     public void ApplyRandomSideEffect(GameObject player)
     {
-        SideEffect effect = SideEffect.FunnyHorn; //(SideEffect)Random.Range(0, System.Enum.GetValues(typeof(SideEffect)).Length);
+        SideEffect effect = (SideEffect)Random.Range(0, System.Enum.GetValues(typeof(SideEffect)).Length);
         ApplyEffect(effect, player);
     }
 
@@ -282,7 +285,22 @@ IEnumerator FuelBlockEffect()
 
         carHorn.sideEffectOn = false;
 
-        Debug.Log("Funny Horn started.");
+        Debug.Log("Funny Horn stopped.");
+    }
+
+    IEnumerator ZoomChaosEffect()
+    {
+        if (zoomChaos == null) yield break;
+
+        Debug.Log("Experiencing Zoom Chaos.");
+
+        //carHorn.sideEffectOn = true;
+
+        //yield return new WaitForSeconds(20f);
+
+        //carHorn.sideEffectOn = false;
+
+        //Debug.Log("Funny Horn stopped.");
     }
 
 }

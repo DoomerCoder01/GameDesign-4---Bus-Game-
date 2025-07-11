@@ -455,7 +455,7 @@ Transform:
   m_GameObject: {fileID: 113792271}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.72, z: 11.09}
+  m_LocalPosition: {x: 0, y: 0.32, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1890,7 +1890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   petrol: {fileID: 2077027883}
-  carHorn: {fileID: 0}
+  carHorn: {fileID: 591490071}
+  zoomChaos: {fileID: 0}
 --- !u!4 &558244537
 Transform:
   m_ObjectHideFlags: 0
@@ -1920,7 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 1952873138}
   spawnPoint: {fileID: 113792272}
-  spawnInterval: 40
+  spawnInterval: 20
   heightAboveGround: 0.5
 --- !u!1001 &572467633
 PrefabInstance:
@@ -2215,7 +2216,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.000053930453, y: 0.000000041998824, z: 0.0000431996, w: 1.3297861e+22}
+  m_BoundingSphereOverride: {x: 3.306076e-39, y: -1.469368e-39, z: 0, w: -1.7152322e-35}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2240,6 +2241,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4946328083715708103, guid: 7939db39b0b00844286c4869ddbe55fb, type: 3}
   m_PrefabInstance: {fileID: 572467633}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &737710096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737710097}
+  m_Layer: 0
+  m_Name: ------------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737710097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737710096}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 179.32365, y: 116.00394, z: 13.067623}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1131761555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &745902647 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8579001114261830231, guid: db6ef5c873d899744998059fa48b44da, type: 3}
@@ -2775,12 +2807,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19645956, y: -6.9e-44, z: 0, w: 0.98051196}
-  m_LocalPosition: {x: 338, y: 3, z: -576}
+  m_LocalRotation: {x: 0.19645956, y: -6.9e-44, z: -0, w: 0.98051196}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1131761555}
   m_LocalEulerAnglesHint: {x: 22.66, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -2796,7 +2828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 477396344}
   smoothSpeed: 0.3
-  offset: {x: 0, y: 0.29, z: -2.55}
+  offset: {x: 0, y: 0.35, z: -2.45}
 --- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,6 +3410,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125496402}
   m_CullTransparentMesh: 1
+--- !u!1 &1131761554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131761555}
+  m_Layer: 0
+  m_Name: CameraParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131761555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131761554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 963194228}
+  - {fileID: 737710097}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135977989
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,7 +6745,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 963194228}
+  - {fileID: 1131761555}
   - {fileID: 705507995}
   - {fileID: 1499645988}
   - {fileID: 2030575415}

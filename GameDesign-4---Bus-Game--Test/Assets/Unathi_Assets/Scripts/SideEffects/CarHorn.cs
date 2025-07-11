@@ -9,6 +9,11 @@ public class CarHorn : MonoBehaviour
 
     public bool sideEffectOn = false;
 
+    void Start()
+    {
+        Debug.Log("Car Horn Location: " + gameObject.name);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
