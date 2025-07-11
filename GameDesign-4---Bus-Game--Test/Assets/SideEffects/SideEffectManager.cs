@@ -10,6 +10,8 @@ public class SideEffectManager : MonoBehaviour
 
     public Petrol petrol;
 
+    public CarHorn carHorn;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -26,6 +28,7 @@ public class SideEffectManager : MonoBehaviour
         SnailMode,
         FlatTire,
         FuelBlock,
+        FunnyHorn,
         // Removed PassengerPanic and other passenger effects
     }
 
@@ -78,6 +81,10 @@ public class SideEffectManager : MonoBehaviour
             case SideEffect.FuelBlock:
                 Debug.Log("Fuel Block activated!");
                 StartCoroutine(FuelBlockEffect());
+                break;
+            case SideEffect.FunnyHorn:
+                Debug.Log("FunnyHorn is on!");
+                StartCoroutine(CarHornEffect());
                 break;
         }
     }
@@ -263,5 +270,19 @@ IEnumerator FuelBlockEffect()
     Debug.Log("Fuel Block ended. Fuel is now depleting again.");
 }
 
+    IEnumerator CarHornEffect()
+    {
+        if (carHorn == null) yield break;
+
+        Debug.Log("Funny Horn started.");
+
+        carHorn.sideEffectOn = true;
+
+        yield return new WaitForSeconds(20f);
+
+        carHorn.sideEffectOn = false;
+
+        Debug.Log("Funny Horn started.");
+    }
 
 }
