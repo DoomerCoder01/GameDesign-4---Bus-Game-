@@ -8,6 +8,8 @@ public class SideEffectManager : MonoBehaviour
     public static SideEffectManager Instance;
     private float sleepySteeringOffset = 0f;
 
+    public Petrol petrol;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -22,6 +24,8 @@ public class SideEffectManager : MonoBehaviour
         ReverseControls,
         FuelDrain,
         SnailMode,
+        FlatTire,
+        FuelBlock,
         // Removed PassengerPanic and other passenger effects
     }
 
@@ -64,6 +68,16 @@ public class SideEffectManager : MonoBehaviour
             case SideEffect.SnailMode:
                 Debug.Log("Activating Snail Mode!");
                 StartCoroutine(SnailMode(car, 30f));
+                break;
+
+            case SideEffect.FlatTire:
+                Debug.Log("Flat Tire activated!");
+                StartCoroutine(FlatTire(car, 10f));
+                break;
+
+            case SideEffect.FuelBlock:
+                Debug.Log("Fuel Block activated!");
+                StartCoroutine(FuelBlockEffect());
                 break;
         }
     }
@@ -163,39 +177,90 @@ public class SideEffectManager : MonoBehaviour
         Debug.Log("ReverseControls effect ended.");
 
     }
-    
+
     IEnumerator SnailMode(RCC_CarControllerV3 car, float duration)
+    {
+        if (car == null) yield break;
+
+        Debug.Log("Snail Mode started.");
+
+        // Save original max speed
+        float originalMaxSpeed = car.maxspeed;
+
+        // Reduce to snail speed (e.g., 20 units)
+        car.maxspeed = 20f;
+
+        float timer = 0f;
+        while (timer < duration)
+        {
+            // Optional: If you want to further slow acceleration, clamp velocity
+            if (car.GetComponent<Rigidbody>() != null)
+            {
+                Rigidbody rb = car.GetComponent<Rigidbody>();
+                if (rb.velocity.magnitude > 5f) // equivalent of ~18km/h
+                {
+                    rb.velocity = rb.velocity.normalized * 5f;
+                }
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Restore max speed
+        car.maxspeed = originalMaxSpeed;
+        Debug.Log("Snail Mode ended.");
+    }
+
+IEnumerator FlatTire(RCC_CarControllerV3 car, float duration)
 {
     if (car == null) yield break;
 
-    Debug.Log("Snail Mode started.");
-
-    // Save original max speed
-    float originalMaxSpeed = car.maxspeed;
-
-    // Reduce to snail speed (e.g., 20 units)
-    car.maxspeed = 20f;
+    Debug.Log("Flat Tire effect started.");
 
     float timer = 0f;
+
+    // Randomly decide which side to pull (left = -1, right = +1)
+    int direction = Random.value > 0.5f ? 1 : -1;
+
+    // Lean angle (in degrees) to tilt the bus visually
+    float leanAngle = 10f * direction;
+
+    // Cache the original rotation
+    Quaternion originalRotation = car.transform.rotation;
+
     while (timer < duration)
     {
-        // Optional: If you want to further slow acceleration, clamp velocity
-        if (car.GetComponent<Rigidbody>() != null)
-        {
-            Rigidbody rb = car.GetComponent<Rigidbody>();
-            if (rb.velocity.magnitude > 5f) // equivalent of ~18km/h
-            {
-                rb.velocity = rb.velocity.normalized * 5f;
-            }
-        }
+        // Add slight unwanted steering
+        car.steerInput += 0.2f * direction;
+
+        // Lean the bus visually
+        Quaternion leanRotation = originalRotation * Quaternion.Euler(0, 0, leanAngle);
+        car.transform.rotation = Quaternion.Lerp(car.transform.rotation, leanRotation, Time.deltaTime * 2f);
 
         timer += Time.deltaTime;
         yield return null;
     }
 
-    // Restore max speed
-    car.maxspeed = originalMaxSpeed;
-    Debug.Log("Snail Mode ended.");
+    // Reset rotation (optional: you can smoothly lerp back if needed)
+    car.transform.rotation = originalRotation;
+
+    Debug.Log("Flat Tire effect ended.");
+}
+
+IEnumerator FuelBlockEffect()
+{
+    if (petrol == null) yield break;
+
+    Debug.Log("Fuel Block started. Fuel is frozen.");
+
+    petrol.isFuelBlocked = true;
+
+    yield return new WaitForSeconds(20f);
+
+    petrol.isFuelBlocked = false;
+
+    Debug.Log("Fuel Block ended. Fuel is now depleting again.");
 }
 
 

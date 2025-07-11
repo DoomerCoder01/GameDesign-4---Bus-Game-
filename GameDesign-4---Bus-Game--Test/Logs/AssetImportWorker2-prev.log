@@ -15,7 +15,7 @@ C:/Users/petro/OneDrive/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-62603
+63025
 Successfully changed project path to: C:/Users/petro/OneDrive/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
 C:/Users/petro/OneDrive/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/petro/OneDrive/GameDesign-4---Bus-Game-/GameDesign-4---Bus-Game--Test
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29452] Host "[IP] 10.196.226.23 [Port] 0 [Flags] 2 [Guid] 3369280552 [EditorId] 3369280552 [Version] 1048832 [Id] WindowsEditor(7,Anele) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [32104] Host "[IP] 10.201.226.12 [Port] 0 [Flags] 2 [Guid] 1860676869 [EditorId] 1860676869 [Version] 1048832 [Id] WindowsEditor(7,Anele) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29452] Host "[IP] 10.196.226.23 [Port] 0 [Flags] 2 [Guid] 3369280552 [EditorId] 3369280552 [Version] 1048832 [Id] WindowsEditor(7,Anele) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [32104] Host "[IP] 10.201.226.12 [Port] 0 [Flags] 2 [Guid] 1860676869 [EditorId] 1860676869 [Version] 1048832 [Id] WindowsEditor(7,Anele) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 50.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 11.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014820 seconds.
-- Loaded All Assemblies, in  0.984 seconds
+Registered in 0.004849 seconds.
+- Loaded All Assemblies, in  0.347 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.677 seconds
-Domain Reload Profiling: 1659ms
-	BeginReloadAssembly (454ms)
+- Finished resetting the current domain, in  0.209 seconds
+Domain Reload Profiling: 555ms
+	BeginReloadAssembly (105ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (105ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (448ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (132ms)
+		LoadAssemblies (102ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (341ms)
-			TypeCache.Refresh (336ms)
-				TypeCache.ScanAssembly (268ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (678ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (115ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (209ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (521ms)
+		SetupLoadedEditorAssemblies (161ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (20ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (353ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,203 +119,276 @@ Please note that FBX files exported from Cinema4D are still supported.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.911 seconds
-Refreshing native plugins compatible for Editor in 17.87 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.733 seconds
+Refreshing native plugins compatible for Editor in 4.02 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.442 seconds
-Domain Reload Profiling: 5331ms
-	BeginReloadAssembly (251ms)
+- Finished resetting the current domain, in  0.949 seconds
+Domain Reload Profiling: 1678ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (1482ms)
-		LoadAssemblies (1040ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (533ms)
+		LoadAssemblies (319ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (579ms)
-			TypeCache.Refresh (484ms)
-				TypeCache.ScanAssembly (446ms)
-			ScanForSourceGeneratedMonoScriptInfo (65ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (3443ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (239ms)
+				TypeCache.ScanAssembly (220ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (949ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3018ms)
+		SetupLoadedEditorAssemblies (772ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (635ms)
-			ProcessInitializeOnLoadAttributes (2303ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (636ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 9.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7885 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 261 unused Assets / (14.8 MB). Loaded Objects now: 8221.
-Memory consumption went from 362.3 MB to 347.5 MB.
-Total: 14.355200 ms (FindLiveObjects: 0.957800 ms CreateObjectMapping: 0.701600 ms MarkObjects: 6.904900 ms  DeleteObjects: 5.787200 ms)
+Unloading 7886 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 260 unused Assets / (14.7 MB). Loaded Objects now: 8244.
+Memory consumption went from 375.6 MB to 360.9 MB.
+Total: 6.963500 ms (FindLiveObjects: 0.641700 ms CreateObjectMapping: 0.288900 ms MarkObjects: 3.740500 ms  DeleteObjects: 2.291600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SideEffectManager.cs: b33764b9f1693f318400154480d2235c -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 91131.990095 seconds.
-  path: Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset
-  artifactKey: Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_9ddc3f4c-9d65-47dd-9c35-1d0ed7fe6e7f.asset using Guid(f24d07954125e744597b42b1d8c680ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b35daf0ddd4cd28fc810bdc79ec43e5') in 0.043224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/New Terrain 1.asset
-  artifactKey: Guid(f1a85b6fe7778504e91ec073536d504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 1.asset using Guid(f1a85b6fe7778504e91ec073536d504b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69aa3c899f1713cad6adc50a9b3cd7e2') in 0.009464 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/TerrainData_bc995529-fb67-49b1-8342-c338c5038938.asset
-  artifactKey: Guid(afef7c5feb6005549864dc0acee4dc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_bc995529-fb67-49b1-8342-c338c5038938.asset using Guid(afef7c5feb6005549864dc0acee4dc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf52457dae132d1cee5c357346929ac1') in 0.008876 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/TerrainData_7b66b77c-3f28-4905-81eb-8e2850a45d7d.asset
-  artifactKey: Guid(667d436544b772e47960e61fbae562fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_7b66b77c-3f28-4905-81eb-8e2850a45d7d.asset using Guid(667d436544b772e47960e61fbae562fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bde88687aa6c26c31909ae724b13705') in 0.013985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(b7afc53c9eae0064585dce5a0122dad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(b7afc53c9eae0064585dce5a0122dad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28eb7c22a559eb24c2d5251bbd9909b3') in 0.010194 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/TerrainData_b35f93f1-a091-4acb-bd35-4f79d970730e.asset
-  artifactKey: Guid(4df79a4bd6c3f0849bcb07d6dd41f3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_b35f93f1-a091-4acb-bd35-4f79d970730e.asset using Guid(4df79a4bd6c3f0849bcb07d6dd41f3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848875036ef3cd43e4798c086917a27a') in 0.007873 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/New Terrain 2.asset
-  artifactKey: Guid(ea50b1d22be94dd4f99793e15e1a2f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(ea50b1d22be94dd4f99793e15e1a2f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13daec22bdb1571532df5eab84ea70ca') in 0.008414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/MyGround.terrainlayer
-  artifactKey: Guid(fc010f2db01aff14f9bf78d31b3915ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyGround.terrainlayer using Guid(fc010f2db01aff14f9bf78d31b3915ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8729d796761a48ca869bcc8d7c086f6b') in 0.135467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
+  custom:scripting/monoscript/fileName/SideEffectType.cs: 2fe03e7abd90a244df39058173bd42d6 -> 
 ========================================================================
 Received Prepare
 Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
 
 Please note that FBX files exported from Cinema4D are still supported.
 Begin MonoManager ReloadAssembly
-IOException: Sharing violation on path C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <b89873cb176e44a995a4781c7487d410>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <b89873cb176e44a995a4781c7487d410>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <b89873cb176e44a995a4781c7487d410>:0 
-  at System.IO.StreamWriter..ctor (System.String path) [0x00008] in <b89873cb176e44a995a4781c7487d410>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
-  at System.IO.File.WriteAllText (System.String path, System.String contents) [0x00026] in <b89873cb176e44a995a4781c7487d410>:0 
-  at UnityEditor.SettingsManagement.FileSettingsRepository.Save () [0x000e2] in .\Library\PackageCache\com.unity.settings-manager@2.0.1\Editor\FileSettingsRepository.cs:154 
-  at UnityEditor.AssemblyReloadEvents.OnBeforeAssemblyReload () [0x00017] in <97436df440ca462884c5332c1d8ebbe7>:0 
-
-(Filename: ./Library/PackageCache/com.unity.settings-manager@2.0.1/Editor/FileSettingsRepository.cs Line: 154)
-
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.520 seconds
-Refreshing native plugins compatible for Editor in 4.91 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.030 seconds
+Refreshing native plugins compatible for Editor in 7.72 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.009 seconds
-Domain Reload Profiling: 3525ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  5.093 seconds
+Domain Reload Profiling: 6116ms
+	BeginReloadAssembly (276ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (630ms)
+		LoadAssemblies (648ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (77ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (5094ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1150ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (924ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7621 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 195 unused Assets / (14.7 MB). Loaded Objects now: 8260.
+Memory consumption went from 312.4 MB to 297.7 MB.
+Total: 8.326700 ms (FindLiveObjects: 0.668300 ms CreateObjectMapping: 0.566600 ms MarkObjects: 4.174300 ms  DeleteObjects: 2.915800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SideEffectManager.cs: b33764b9f1693f318400154480d2235c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/SideEffectType.cs: 2fe03e7abd90a244df39058173bd42d6 -> 
+========================================================================
+Received Prepare
+Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.582 seconds
+Refreshing native plugins compatible for Editor in 5.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.470 seconds
+Domain Reload Profiling: 2048ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (363ms)
+		LoadAssemblies (354ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (74ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1470ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (578ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (445ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7621 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 195 unused Assets / (14.7 MB). Loaded Objects now: 8275.
+Memory consumption went from 312.4 MB to 297.7 MB.
+Total: 7.473900 ms (FindLiveObjects: 0.820700 ms CreateObjectMapping: 0.564600 ms MarkObjects: 3.230900 ms  DeleteObjects: 2.855900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SideEffectManager.cs: b33764b9f1693f318400154480d2235c -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/SideEffectType.cs: 2fe03e7abd90a244df39058173bd42d6 -> 
+========================================================================
+Received Prepare
+Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.557 seconds
+Refreshing native plugins compatible for Editor in 4.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.500 seconds
+Domain Reload Profiling: 2053ms
+	BeginReloadAssembly (157ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
+		CreateAndSetChildDomain (46ms)
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (272ms)
-		LoadAssemblies (317ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (325ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (25ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (3010ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (47ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1500ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (644ms)
+		SetupLoadedEditorAssemblies (552ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (493ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (429ms)
 			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 6.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7620 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 198 unused Assets / (15.1 MB). Loaded Objects now: 8244.
-Memory consumption went from 304.2 MB to 289.0 MB.
-Total: 8.339900 ms (FindLiveObjects: 0.611600 ms CreateObjectMapping: 0.331500 ms MarkObjects: 3.705700 ms  DeleteObjects: 3.689800 ms)
+Unloading 7622 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 195 unused Assets / (14.7 MB). Loaded Objects now: 8291.
+Memory consumption went from 312.4 MB to 297.7 MB.
+Total: 7.403000 ms (FindLiveObjects: 0.599000 ms CreateObjectMapping: 0.359200 ms MarkObjects: 3.576000 ms  DeleteObjects: 2.867600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -331,187 +404,332 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SideEffectManager.cs: b33764b9f1693f318400154480d2235c -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/SideEffectType.cs: 2fe03e7abd90a244df39058173bd42d6 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 73.427489 seconds.
-  path: Assets/Unathi_Assets
-  artifactKey: Guid(44243af0c2ba8004e95fe5fef6b88607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets using Guid(44243af0c2ba8004e95fe5fef6b88607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30a62862924e4ebe28e521477886848') in 0.020444 seconds
+  Time since last request: 93378.446051 seconds.
+  path: Assets/PowerUpSpawner.cs
+  artifactKey: Guid(95f164ab8a7ec4d4db179869eea4832b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PowerUpSpawner.cs using Guid(95f164ab8a7ec4d4db179869eea4832b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb337ddb44cfc72aa997d17c013cb43f') in 0.024803 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001773 seconds.
-  path: Assets/Unathi_Assets/DropOff_mat.mat
-  artifactKey: Guid(792e9e41846141d48951ae7e7968587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/DropOff_mat.mat using Guid(792e9e41846141d48951ae7e7968587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0edc58e9df56eac31e7b68ebada67c0') in 0.325343 seconds
+  Time since last request: 2.583292 seconds.
+  path: Assets/PowerUpEffect.cs
+  artifactKey: Guid(1d2bc4bde1f331e41874b40473e7b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PowerUpEffect.cs using Guid(1d2bc4bde1f331e41874b40473e7b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022d7539d2793d9098da491133197c7b') in 0.000576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 33.812443 seconds.
+  path: Assets/PowerUpEffect.cs
+  artifactKey: Guid(1d2bc4bde1f331e41874b40473e7b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PowerUpEffect.cs using Guid(1d2bc4bde1f331e41874b40473e7b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18d98798e4185027a6e3c197296c4f4') in 0.000927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 63.247836 seconds.
+  path: Assets/SideEffectManager.cs
+  artifactKey: Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SideEffectManager.cs using Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2a78772e8393769f5760827c416bfb') in 0.000999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 44.484090 seconds.
+  path: Assets/SideEffectManager.cs
+  artifactKey: Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SideEffectManager.cs using Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32394802f2174879a0c50a5784ee7d7b') in 0.000936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 35.311928 seconds.
+  path: Assets/Prefabs/Blood.mat
+  artifactKey: Guid(34ac1834d560a1e4f986d7ce4eef7b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Blood.mat using Guid(34ac1834d560a1e4f986d7ce4eef7b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d7fdc0fc0114f0045190d046e1a5a1b') in 0.123611 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Unathi_Assets/hiker_nor.jpg
-  artifactKey: Guid(c744c709016d7584ba814dc22d77ebfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/hiker_nor.jpg using Guid(c744c709016d7584ba814dc22d77ebfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864107e1bfcafc264ae70ca694583e5b') in 0.034397 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/building 2.prefab
+  artifactKey: Guid(b09a1e1ba6e532f4b8e73a93e79357d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/building 2.prefab using Guid(b09a1e1ba6e532f4b8e73a93e79357d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b461897f0e67eda19649ef05d8334f0') in 0.145845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 55
+========================================================================
+Received Import Request.
+  Time since last request: 25.715045 seconds.
+  path: Assets/Prefabs/Cube.prefab
+  artifactKey: Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Cube.prefab using Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636d9909b0f019d8a76ee217bf2fbc11') in 0.012425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 14.370834 seconds.
+  path: Assets/Prefabs/Power.prefab
+  artifactKey: Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Power.prefab using Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8ff73a10aace7ce3001c182980e6de') in 0.014649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 19.115858 seconds.
+  path: Assets/Bus
+  artifactKey: Guid(7ce5ff48d9bec37479b64034a3073388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bus using Guid(7ce5ff48d9bec37479b64034a3073388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71a032899191476f4e5ca9072ae78fc') in 0.000681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.057505 seconds.
+  path: Assets/Bus/BUS.obj
+  artifactKey: Guid(70ba66dbfa2c74b448f3980f18bda52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bus/BUS.obj using Guid(70ba66dbfa2c74b448f3980f18bda52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528b4e7e5ed90b1491fe6d5814640fe1') in 0.283770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 11.111302 seconds.
+  path: Assets/RealisticCarControllerV3
+  artifactKey: Guid(c509a6dee2efacc4eb6152a1b365c593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3 using Guid(c509a6dee2efacc4eb6152a1b365c593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58e8f78c361f8852bc3475d65e9b105a') in 0.001725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.053557 seconds.
+  path: Assets/RealisticCarControllerV3/Icon.png
+  artifactKey: Guid(9e7ac442d0040dc44b6dedbc949128b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Icon.png using Guid(9e7ac442d0040dc44b6dedbc949128b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2064aa18142b2ab342cdfdce8ae0d014') in 0.046477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 646.384005 seconds.
+  path: Assets/SideEffects/SideEffectManager.cs
+  artifactKey: Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SideEffects/SideEffectManager.cs using Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74250aba49d393d1c45ac6e777fb1c19') in 0.004129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 177.882939 seconds.
+  path: Assets/SideEffects/PowerUpSpawner.cs
+  artifactKey: Guid(95f164ab8a7ec4d4db179869eea4832b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SideEffects/PowerUpSpawner.cs using Guid(95f164ab8a7ec4d4db179869eea4832b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d3cbb4bdf8739ea5e2ebb9b1ebb94c2') in 0.008770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.701297 seconds.
+  path: Assets/Prefabs/PowerUp.prefab
+  artifactKey: Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUp.prefab using Guid(0f79232c32d466748bc0f93eb6141be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8242f98d1a4446b858b54d5df256b42b') in 0.113798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 255.261967 seconds.
+  path: Assets/SideEffects/SideEffectManager.cs
+  artifactKey: Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SideEffects/SideEffectManager.cs using Guid(7c8e453dbfce4104a97ccb32d48b7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb600ee9115bac893f6502825a13794a') in 0.005936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.779407 seconds.
+  path: Assets/passenger System/Ch43_nonPBR@Walking (1).fbx
+  artifactKey: Guid(7b9c2b44d0b10624080fbc150cd0577a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Ch43_nonPBR@Walking (1).fbx using Guid(7b9c2b44d0b10624080fbc150cd0577a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091f3d1e310c98bee72b320962a1686f') in 0.240339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/passenger System/Ramp.prefab
+  artifactKey: Guid(c932ac096e7d306488e2faf28e4ebe0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Ramp.prefab using Guid(c932ac096e7d306488e2faf28e4ebe0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387ccd6051da397c960354908ddd871c') in 0.059578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/passenger System/see through.mat
+  artifactKey: Guid(6a1bfb621b6cad844886c794ecab9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/see through.mat using Guid(6a1bfb621b6cad844886c794ecab9c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a9069cdf4d8e76ee395b92465cbfd0') in 0.424051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/passenger System/Passenger 1.prefab
+  artifactKey: Guid(56780ca7afb7bf04b9f51245cb477fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Passenger 1.prefab using Guid(56780ca7afb7bf04b9f51245cb477fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6601ec8755149df89cf4b1033ae1a3c') in 0.033753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/passenger System/Passenger.prefab
+  artifactKey: Guid(e8cf0d9540260494f8957406788e4a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Passenger.prefab using Guid(e8cf0d9540260494f8957406788e4a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce48c2a2b63484c3afcfda1e56eb305') in 0.383134 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 292
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/passenger System/Standing W_Briefcase Idle.fbx
+  artifactKey: Guid(8a075f9cefb3c544b919f7a340157c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Standing W_Briefcase Idle.fbx using Guid(8a075f9cefb3c544b919f7a340157c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12bddf077c364a1c3ab7266ea8ee77af') in 0.096568 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 140
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/passenger System/Passenger 2.prefab
+  artifactKey: Guid(49b710aa443c91e4ba1c74073b1e7cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/Passenger 2.prefab using Guid(49b710aa443c91e4ba1c74073b1e7cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c2af05ef1856ad9340243b77a97245') in 0.096712 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 449
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/passenger System/green see through.mat
+  artifactKey: Guid(593f9976020ccc44b8e5b290fb7854eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/passenger System/green see through.mat using Guid(593f9976020ccc44b8e5b290fb7854eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9e9a53ef0c25df32d4069f63d16c64') in 0.010402 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 24.234311 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Fuel Pump.mat
+  artifactKey: Guid(8da18ba9fb16bce4e9389cacc9d2b19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Fuel Pump.mat using Guid(8da18ba9fb16bce4e9389cacc9d2b19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1192f54c939edaf885ec7418a7fb80c') in 0.024458 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dashboard/Fuel2.png
+  artifactKey: Guid(cc308f725032e4d40bdf580619e21a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Textures/Dashboard/Fuel2.png using Guid(cc308f725032e4d40bdf580619e21a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deeabe2a581f923af69fe54d3e1d56f5') in 0.322798 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 46.411873 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Crash/carimpact3.wav
+  artifactKey: Guid(17550b365ac51f2418915bf82b519630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Sounds/Crash/carimpact3.wav using Guid(17550b365ac51f2418915bf82b519630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8508a2d2629a92263cad4fb6c59e14c6') in 0.537801 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Unathi_Assets/hiker_glossy.jpg
-  artifactKey: Guid(8436b699967817e48a85fa0be95302b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/hiker_glossy.jpg using Guid(8436b699967817e48a85fa0be95302b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b02a2b5362ba5b8c87e42af970378c') in 0.021003 seconds
+  Time since last request: 0.000046 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Engine Parts.mat
+  artifactKey: Guid(2a91f42cbdbbcca4b8c5a7f9749af06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Engine Parts.mat using Guid(2a91f42cbdbbcca4b8c5a7f9749af06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11f42d83f747fc90d08a573e28d1a1e') in 0.009539 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 132.417965 seconds.
+  path: Assets/ADG_Textures/ground_vol1/ground2/ground2_Diffuse.tga
+  artifactKey: Guid(ef1fbc9bae2718d4a8dbe2baaa01399c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ADG_Textures/ground_vol1/ground2/ground2_Diffuse.tga using Guid(ef1fbc9bae2718d4a8dbe2baaa01399c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2078808989fc948c120845caa63db20') in 0.026394 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002003 seconds.
+  path: Assets/ADG_Textures/ground_vol1/ground5/ground5_Diffuse.tga
+  artifactKey: Guid(216e2729631e003468211108545a08f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ADG_Textures/ground_vol1/ground5/ground5_Diffuse.tga using Guid(216e2729631e003468211108545a08f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f479c34fac943bc730743dbef7eb74') in 0.018255 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Unathi_Assets/hiker_diff_2.jpg
-  artifactKey: Guid(7c63d6ac4853fdf47878f2fa3b53ab8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/hiker_diff_2.jpg using Guid(7c63d6ac4853fdf47878f2fa3b53ab8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbffebbe1091951a26753a563a804483') in 0.020777 seconds
+  path: Assets/ADG_Textures/ground_vol1/ground6/ground6_Diffuse.tga
+  artifactKey: Guid(6dff70b1f69dbc640b854ad550b78c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ADG_Textures/ground_vol1/ground6/ground6_Diffuse.tga using Guid(6dff70b1f69dbc640b854ad550b78c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81905eabd551c8b9e271cbedfcdd0af3') in 0.020623 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Unathi_Assets/PickupSpot_Mat.mat
-  artifactKey: Guid(a2726e444e58e0c44b122a0eaae89bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/PickupSpot_Mat.mat using Guid(a2726e444e58e0c44b122a0eaae89bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c16d4aeba07de6d2d2221fc1a474579') in 0.010035 seconds
+  Time since last request: 0.000016 seconds.
+  path: Assets/ADG_Textures/ground_vol1/ground4/ground4_Diffuse.tga
+  artifactKey: Guid(9875bf7345d4ac04ab35f3b9ed63a954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ADG_Textures/ground_vol1/ground4/ground4_Diffuse.tga using Guid(9875bf7345d4ac04ab35f3b9ed63a954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbf2dd96228496fb75b8b80122c1e5d') in 0.017802 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ADG_Textures/ground_vol1/ground10/ground10_Diffuse.tga
+  artifactKey: Guid(877fd89f59f209b48af33c4e3e45498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ADG_Textures/ground_vol1/ground10/ground10_Diffuse.tga using Guid(877fd89f59f209b48af33c4e3e45498d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0971ace60a5c2597e27cb02602c2700') in 0.021996 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 40.167767 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Particles/ParticleFlare.png
+  artifactKey: Guid(05b1772849a207946bf86ef1a1897096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Textures/Particles/ParticleFlare.png using Guid(05b1772849a207946bf86ef1a1897096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b84c32ff072019467f2a0f071d11092') in 0.028187 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Unathi_Assets/New Material.mat
-  artifactKey: Guid(a31ee6f2175717b47bd302bfb31d376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/New Material.mat using Guid(a31ee6f2175717b47bd302bfb31d376b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b1ad83524b0d48d1e039023a50f588') in 0.207323 seconds
+  path: Assets/RealisticCarControllerV3/Textures/Mobile Textures/Pause.png
+  artifactKey: Guid(1b51b3146c2f089479e5019a526265a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RealisticCarControllerV3/Textures/Mobile Textures/Pause.png using Guid(1b51b3146c2f089479e5019a526265a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148fb657d573b88106e90fab678892f7') in 0.023431 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 4.822904 seconds.
-  path: Assets/Unathi_Assets/World Assets
-  artifactKey: Guid(e79bf4de2c5e92d4785017c095b715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/World Assets using Guid(e79bf4de2c5e92d4785017c095b715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596806d89f44a8682448b7e87c3a48a1') in 0.000964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.048486 seconds.
-  path: Assets/Unathi_Assets/World Assets/Box.fbx
-  artifactKey: Guid(9aaf693dd5d6a11439d3551098b88428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unathi_Assets/World Assets/Box.fbx using Guid(9aaf693dd5d6a11439d3551098b88428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f032439b9f094bdcbe3dc2504a44cb') in 0.317301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 8.202563 seconds.
-  path: Assets/Anele
-  artifactKey: Guid(bee127635a3c99740a560ba6c08a55f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anele using Guid(bee127635a3c99740a560ba6c08a55f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555e9a47196bef5aba2eccb17b14a2bd') in 0.000726 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.060549 seconds.
-  path: Assets/Anele/Bus_2 Variant.prefab
-  artifactKey: Guid(db6ef5c873d899744998059fa48b44da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anele/Bus_2 Variant.prefab using Guid(db6ef5c873d899744998059fa48b44da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1624c2c2f9a682a1891ed74c0a285a') in 0.240824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 99
-========================================================================
-Received Import Request.
-  Time since last request: 1.393937 seconds.
-  path: Assets/Anele/Scenes
-  artifactKey: Guid(e5d7e6a751b8ee547bc3f83a871e1903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anele/Scenes using Guid(e5d7e6a751b8ee547bc3f83a871e1903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3449e8cdfe1e997f5b8c03ffd44929') in 0.000686 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.035957 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(d3e511766efad8440b7fa17cbe6c3076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(d3e511766efad8440b7fa17cbe6c3076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddf220997ea6997b57b20fc1addf336') in 0.000675 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.311429 seconds.
-  path: Assets/Scenes/Level 4.unity
-  artifactKey: Guid(3b42dbc0df2361547afb957feb1bf048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level 4.unity using Guid(3b42dbc0df2361547afb957feb1bf048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebff1cca5076f4aa99465b1a43f8b5d') in 0.000595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
-
-Please note that FBX files exported from Cinema4D are still supported.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.521 seconds
-Refreshing native plugins compatible for Editor in 6.53 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.692 seconds
-Domain Reload Profiling: 2209ms
-	BeginReloadAssembly (156ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (289ms)
-		LoadAssemblies (332ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1693ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (750ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (620ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 6.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7620 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 196 unused Assets / (14.7 MB). Loaded Objects now: 8306.
-Memory consumption went from 304.5 MB to 289.8 MB.
-Total: 7.945400 ms (FindLiveObjects: 0.937800 ms CreateObjectMapping: 0.538800 ms MarkObjects: 3.513500 ms  DeleteObjects: 2.954400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpEffect : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bus"))
         {
@@ -12,6 +12,4 @@ public class PowerUpEffect : MonoBehaviour
             Destroy(gameObject); // Remove the power-up
         }
     }
-
-
 }

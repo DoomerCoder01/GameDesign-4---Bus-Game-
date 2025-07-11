@@ -1662,10 +1662,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PowerUp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8237409269106633741, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 402264174572491735, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8237409269106633741, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1952873144}
   m_SourcePrefab: {fileID: 100100000, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
 --- !u!1 &547326069
 GameObject:
@@ -1782,8 +1790,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 558244537}
-  - component: {fileID: 558244536}
   - component: {fileID: 558244535}
+  - component: {fileID: 558244538}
   m_Layer: 0
   m_Name: PowerUpManager
   m_TagString: Untagged
@@ -1803,22 +1811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8e453dbfce4104a97ccb32d48b7f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &558244536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558244534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95f164ab8a7ec4d4db179869eea4832b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 8237409269106633741, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
-  numberOfPowerUps: 20
-  spawnAreaMin: {x: -50, y: -50}
-  spawnAreaMax: {x: 50, y: 50}
+  petrol: {fileID: 2077027883}
 --- !u!4 &558244537
 Transform:
   m_ObjectHideFlags: 0
@@ -1834,6 +1827,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &558244538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558244534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660704c640471a14291862e8673d20d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpPrefab: {fileID: 1952873138}
+  player: {fileID: 2077027870}
+  spawnInterval: 40
+  forwardDistance: 50
+  sidewaysRange: 15
+  heightAboveGround: 0.5
 --- !u!1001 &572467633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2534,6 +2545,7 @@ MonoBehaviour:
   slider: {fileID: 849157628}
   maxPetrol: 100
   petrolAmount: 100
+  isFuelBlocked: 0
   petrolText: {fileID: 993465477}
   petrolTExt: {fileID: 993465475}
 --- !u!4 &933072041
@@ -5615,6 +5627,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1411900911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1952873138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8237409269106633741, guid: 0f79232c32d466748bc0f93eb6141be7, type: 3}
+  m_PrefabInstance: {fileID: 541853975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1952873144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952873138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afee8fc0493e426458751e3be96ccb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1957698492
 GameObject:
   m_ObjectHideFlags: 0
@@ -6385,6 +6414,7 @@ MonoBehaviour:
   slider: {fileID: 849157628}
   maxPetrol: 100
   petrolAmount: 100
+  isFuelBlocked: 0
   petrolText: {fileID: 1125496404}
   petrolTExt: {fileID: 993465475}
 --- !u!1 &2119913010

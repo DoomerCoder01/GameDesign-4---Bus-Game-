@@ -9,6 +9,8 @@ public class Petrol : MonoBehaviour
     public float maxPetrol = 100f;
     public float petrolAmount = 100f; // Initial amount of petrol in liters
     private float depletionRate; // Rate at which petrol depletes in liters per second
+    public bool isFuelBlocked = false;
+
 
     [SerializeField] Text petrolText;
     [SerializeField] GameObject petrolTExt;
@@ -22,8 +24,10 @@ public class Petrol : MonoBehaviour
 
     void Update()
     {
-        // Decrease the petrolAmount based on depletion rate and time
-        petrolAmount -= depletionRate * Time.deltaTime;
+        if (!isFuelBlocked)
+        {
+            petrolAmount -= depletionRate * Time.deltaTime;
+        }
 
         // Ensure petrolAmount doesn't go below 0
         petrolAmount = Mathf.Max(petrolAmount, 0f);
