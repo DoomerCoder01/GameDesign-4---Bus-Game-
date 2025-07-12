@@ -69,6 +69,24 @@ public class PassengerController : MonoBehaviour
         currency += amount;
         OnCurrencyChanged?.Invoke(currency); // Notify listeners that currency has changed
     }
+
+    public static void ResetPassengerCount()
+{
+    passengerCount = 0;
+
+    // Update all active PassengerControllers' UI
+    PassengerController[] allControllers = FindObjectsOfType<PassengerController>();
+    foreach (PassengerController pc in allControllers)
+    {
+        if (pc.passengerCountText != null)
+        {
+            pc.passengerCountText.text = "0";
+        }
+    }
+
+    Debug.Log("Passenger Panic: All passengers removed. Count reset to 0.");
+}
+
 }
 
 
