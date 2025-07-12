@@ -12,7 +12,7 @@ public class PassengersForest : MonoBehaviour
 
     private List<GameObject> passengers = new List<GameObject>();
     [SerializeField] private GameObject passengerPrefab; // The prefab to spawn
-    [SerializeField] private Transform[] spawnPoints;    // All spawn points
+    public Transform[] spawnPoints;    // All spawn points
 
     private void Awake()
     {
@@ -22,6 +22,11 @@ public class PassengersForest : MonoBehaviour
             Destroy(gameObject);
 
         SpawnPassengers(); // Spawn passengers at the beginning
+    }
+
+    void Start()
+    {
+        Debug.Log("PassengersForest Location: " + gameObject.name);
     }
 
     void Update()
