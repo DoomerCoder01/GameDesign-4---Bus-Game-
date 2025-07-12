@@ -13,11 +13,14 @@ public class SideEffectManager : MonoBehaviour
     public CarHorn carHorn;
 
     public ZoomChaos zoomChaos;
+    private EffectLogger logger;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        logger = FindObjectOfType<EffectLogger>();
     }
 
     public enum SideEffect
@@ -60,6 +63,12 @@ public class SideEffectManager : MonoBehaviour
 
     public void ApplyEffect(SideEffect effect, GameObject player)
     {
+
+        if (logger != null)
+        {
+            logger.LogEffect("Side Effect Activated: " + effect.ToString());
+        }
+        
         var car = player.GetComponent<RCC_CarControllerV3>();
         var petrol = player.GetComponent<Petrol>();
 
@@ -117,15 +126,17 @@ public class SideEffectManager : MonoBehaviour
                 break;
 
             case SideEffect.PassengerPanic:
-                 Debug.Log("Passenger Panic activated!");
-                 TriggerPassengerPanic();
-                 break;
+                Debug.Log("Passenger Panic activated!");
+                TriggerPassengerPanic();
+                break;
 
             case SideEffect.CloneMirage:
                 Debug.Log("Clone Mirage activated!");
                 StartCoroutine(SpawnCloneMirage(car.transform, 15f));
                 break;
         }
+
+        
     }
 
     IEnumerator TurboBoost(RCC_CarControllerV3 car, float duration, float multiplier = 2f)

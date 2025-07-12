@@ -1496,3 +1496,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:scripting/monoscript/fileName/PopupEffect.cs: d6d1cf709f46d723b79c063c30333f09 -> d5cc803c325d6c4e96a422445791a7df
+========================================================================
+Received Prepare
+Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive - University of Witwatersrand\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive - University of Witwatersrand\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.810 seconds
+Refreshing native plugins compatible for Editor in 3.60 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.036 seconds
+Domain Reload Profiling: 4843ms
+	BeginReloadAssembly (745ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (425ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (960ms)
+		LoadAssemblies (983ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (160ms)
+			TypeCache.Refresh (41ms)
+				TypeCache.ScanAssembly (4ms)
+			ScanForSourceGeneratedMonoScriptInfo (101ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (3036ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (676ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (519ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7631 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 195 unused Assets / (14.7 MB). Loaded Objects now: 8526.
+Memory consumption went from 313.3 MB to 298.6 MB.
+Total: 8.379000 ms (FindLiveObjects: 0.665500 ms CreateObjectMapping: 0.365600 ms MarkObjects: 4.054700 ms  DeleteObjects: 3.292000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CureCheckpointManager.cs: d6ba0fd2168c925b6dfadf4fb63d1635 -> 8c6387be5906299b754d251cda69509f
+  custom:scripting/monoscript/fileName/CureCheckpoint.cs: 7e96e9a75fe5e0a8804a2f40b05d94af -> 1039398fa6dda3ee683d8bc6d17a9a36
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EffectLogger.cs: 4d3104924bf5ee64c1a0c90f9d7540c0 -> e2ed57f5b43d123bff1eab8985787c25
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/PopupEffect.cs: d6d1cf709f46d723b79c063c30333f09 -> d5cc803c325d6c4e96a422445791a7df
+========================================================================
+Received Prepare
+Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Refreshing native plugins compatible for Editor in 3.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 139 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 139 unused Assets / (14.7 MB). Loaded Objects now: 8526.
+Memory consumption went from 198.6 MB to 183.9 MB.
+Total: 8.407900 ms (FindLiveObjects: 0.885200 ms CreateObjectMapping: 0.834500 ms MarkObjects: 3.717500 ms  DeleteObjects: 2.969500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/CureCheckpointManager.cs: d6ba0fd2168c925b6dfadf4fb63d1635 -> 8c6387be5906299b754d251cda69509f
+  custom:scripting/monoscript/fileName/CureCheckpoint.cs: 7e96e9a75fe5e0a8804a2f40b05d94af -> 1039398fa6dda3ee683d8bc6d17a9a36
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EffectLogger.cs: 4d3104924bf5ee64c1a0c90f9d7540c0 -> e2ed57f5b43d123bff1eab8985787c25
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/PopupEffect.cs: d6d1cf709f46d723b79c063c30333f09 -> d5cc803c325d6c4e96a422445791a7df
