@@ -586,3 +586,167 @@ Received Import Request.
 Start importing Assets/Scenes/Level 4.unity using Guid(3b42dbc0df2361547afb957feb1bf048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6375152a6a5d02cc3bcae4385b07efd6') in 0.000628 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Assets/Unathi_Assets/k1/K1.c4d: Unity no longer supports importing Cinema 4D files directly, but we're working with Maxon to make the experience better. To import Cinema 4D files, install Maxon's external importer. You can find more information on the Unity Forum: https://on.unity.com/c4d.
+
+Please note that FBX files exported from Cinema4D are still supported.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive - University of Witwatersrand\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\petro\OneDrive - University of Witwatersrand\GameDesign-4---Bus-Game-\GameDesign-4---Bus-Game--Test\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.582 seconds
+Refreshing native plugins compatible for Editor in 3.69 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.487 seconds
+Domain Reload Profiling: 3065ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (343ms)
+		LoadAssemblies (386ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2488ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (573ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (432ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 4.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7630 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 195 unused Assets / (14.7 MB). Loaded Objects now: 8308.
+Memory consumption went from 319.0 MB to 304.3 MB.
+Total: 8.300900 ms (FindLiveObjects: 0.609800 ms CreateObjectMapping: 0.436800 ms MarkObjects: 3.919500 ms  DeleteObjects: 3.334200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 417.754119 seconds.
+  path: Assets/Scenes/Level 4.unity
+  artifactKey: Guid(3b42dbc0df2361547afb957feb1bf048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 4.unity using Guid(3b42dbc0df2361547afb957feb1bf048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362457d25cb171c5aa02eaaaf1e3569b') in 0.076966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.852474 seconds.
+  path: Assets/Unathi_Assets
+  artifactKey: Guid(44243af0c2ba8004e95fe5fef6b88607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets using Guid(44243af0c2ba8004e95fe5fef6b88607) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30a62862924e4ebe28e521477886848') in 0.000778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.083063 seconds.
+  path: Assets/Unathi_Assets/SplashRFender.renderTexture
+  artifactKey: Guid(b336d303eabf49642b5903e7e3f1ceae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/SplashRFender.renderTexture using Guid(b336d303eabf49642b5903e7e3f1ceae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5371382c0f833138fa27b4ee8aa5f92b') in 0.043923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.318135 seconds.
+  path: Assets/Unathi_Assets/World Assets
+  artifactKey: Guid(e79bf4de2c5e92d4785017c095b715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets using Guid(e79bf4de2c5e92d4785017c095b715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596806d89f44a8682448b7e87c3a48a1') in 0.001271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.084516 seconds.
+  path: Assets/Unathi_Assets/World Assets/Box.fbx
+  artifactKey: Guid(9aaf693dd5d6a11439d3551098b88428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Box.fbx using Guid(9aaf693dd5d6a11439d3551098b88428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f032439b9f094bdcbe3dc2504a44cb') in 0.125615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Unathi_Assets/World Assets/Water Plane.fbx
+  artifactKey: Guid(67d238ff7297d864994fc0bbbe48965b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Water Plane.fbx using Guid(67d238ff7297d864994fc0bbbe48965b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035849c9fbb5f202fc42c0cdda955f69') in 0.067339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Unathi_Assets/World Assets/Jhula.fbx
+  artifactKey: Guid(16ffa86d2f1fb774b9952ea32fdcfb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Jhula.fbx using Guid(16ffa86d2f1fb774b9952ea32fdcfb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c7474b5f5a865cd62206ab4941aef40') in 0.060323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Unathi_Assets/World Assets/park bench.fbx
+  artifactKey: Guid(41d48ca5bb219874b8c00a4d05845378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/park bench.fbx using Guid(41d48ca5bb219874b8c00a4d05845378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ec4a2cb490271b296430de3f14cc7b') in 0.059416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 7.856768 seconds.
+  path: Assets/Unathi_Assets/World Assets/Petrol Station
+  artifactKey: Guid(738cfe8a424e108418d41292fcd1d696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Petrol Station using Guid(738cfe8a424e108418d41292fcd1d696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d3e9d825d8faceb53206adf7096f7f') in 0.001043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.075000 seconds.
+  path: Assets/Unathi_Assets/World Assets/Petrol Station/Petrol Station_Low_DefaultMaterial_BaseColor.png
+  artifactKey: Guid(50e11072601b70147bf999895899d78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Petrol Station/Petrol Station_Low_DefaultMaterial_BaseColor.png using Guid(50e11072601b70147bf999895899d78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4859d99573f9a6ce7dd50f5e62ae6a5e') in 0.027614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Unathi_Assets/World Assets/Petrol Station/Petrol Station_Low_DefaultMaterial_Normal.png
+  artifactKey: Guid(9e2bcd6504e23a0418547a4c3bfe50f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unathi_Assets/World Assets/Petrol Station/Petrol Station_Low_DefaultMaterial_Normal.png using Guid(9e2bcd6504e23a0418547a4c3bfe50f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b875795fbbfef015c6cc4d2416acec9e') in 0.028231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
